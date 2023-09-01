@@ -1,7 +1,12 @@
-### Hi there 👋
-
+### Hi there 👋 (WiP 🚧)
+![Heitor Polidoro's GitHub stats](https://github-readme-stats.vercel.app/api/?username=heitorpolidoro&show_icons=true&theme=dark&show=reviews,prs_merged,prs_merged_percentage&rank_icon=github)
 <a href="https://app.daily.dev/heitorpolidoro"><img src="https://github.com/heitorpolidoro/heitorpolidoro/blob/master/devcard.svg" width="400" alt="Heitor Luis Polidoro's Dev Card"/></a>
+
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=heitorpolidoro&theme=dark&layout=compact)
+
 <!--
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=autocreate-pr&theme=dark)](https://github.com/heitorpolidoro/autocreate-pr)
 **heitorpolidoro/heitorpolidoro** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:

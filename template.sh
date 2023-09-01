@@ -1,5 +1,8 @@
 set -e
 
+wget https://raw.githubusercontent.com/heitorpolidoro/projects-actions-health/master/README-template.md
+repo=$(pwd | sed -e "s;^$HOME;~;" | sed -e "s;^~/workspace/;;")
+sed -i "s;\$repo;$repo;" README-template.md
 mkdir .github/workflows -p
 cd .github
 wget https://raw.githubusercontent.com/heitorpolidoro/projects-actions-health/master/CODEOWNERS

@@ -1,14 +1,11 @@
-# (WiP 🚧)
 <h1 align="center">Hi 👋, I'm Heitor Polidoro</h1>
 <h3 align="center">Backend developer</h3>
 
-<div style="display: flex">
-  <div style="flex: 50%">
-  Graduated in Computer Science from Universidade de São Paulo, campus São Carlos, Brazil, with a master's degree with an emphasis in Robotics. 
-  
-  I've programmed in Python, Elixir, Java, JavaScript (Node and TypeScript), C/C++ to Assembly.
-  
-  Love to solve puzzles, passionate about programming since I was 15 years old. Not afraid to learn new things.
+Graduated in Computer Science from Universidade de São Paulo, campus São Carlos, Brazil, with a master's degree with an emphasis in Robotics. 
+
+I've programmed in Python, Elixir, Java, JavaScript (Node and TypeScript), C/C++ to Assembly.
+
+Love to solve puzzles, passionate about programming since I was 15 years old. Not afraid to learn new things.
 
 ---
   [![GMail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:heitor.polidoro@gmail.com)
@@ -34,16 +31,11 @@
 -->
   <!-- - 🌱 I’m currently learning ... -->
   <!-- - 👯 I’m looking to collaborate on ... -->
-  
-  </div>
-  <div style="flex: 50%">
-    
-  ![Heitor Polidoro's GitHub stats](https://github-readme-stats.vercel.app/api/?username=heitorpolidoro&show_icons=true&theme=dark&show=reviews,prs_merged,prs_merged_percentage&rank_icon=github&card_width=500px&hide_border=true)
-  [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=heitorpolidoro&theme=dark&date_format=M%20j%5B%2C%20Y%5D&card_width=500px&hide_border=true)](https://git.io/streak-stats)
-  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=heitorpolidoro&theme=dark&layout=compact&card_width=500px&hide_border=true)
-  </div>
-</div>
 
+---
+![Heitor Polidoro's GitHub stats](https://github-readme-stats.vercel.app/api/?username=heitorpolidoro&show_icons=true&theme=dark&show=reviews,prs_merged,prs_merged_percentage&rank_icon=github&card_width=500px&hide_border=true)<br>
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=heitorpolidoro&theme=dark&date_format=M%20j%5B%2C%20Y%5D&card_width=500px&hide_border=true)](https://git.io/streak-stats)<br>
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=heitorpolidoro&theme=dark&layout=compact&card_width=500px&hide_border=true)
 ---
 <h3 align="left">Languages and Tools:</h3>
 <!-- Tools -->

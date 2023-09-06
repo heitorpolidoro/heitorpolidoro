@@ -42,6 +42,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 
 ---
 <h3 align="left">Languages and Tools:</h3>
+
 <!-- Tools -->
 [![Linux](https://skillicons.dev/icons?i=linux&theme=dark)](https://www.linux.org/)
 [![Git](https://skillicons.dev/icons?i=git&theme=dark)](https://git-scm.com/)
@@ -76,6 +77,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 
 ---
 <h3 align="left">My GitHub Actions:</h3>
+
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=autocreate-pr&theme=dark)](https://github.com/heitorpolidoro/autocreate-pr)
 
 ---

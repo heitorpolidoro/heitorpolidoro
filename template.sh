@@ -1,13 +1,18 @@
 set -e
+download() {
+  target=$1
+  echo "Downloading ${target}"
+  curl -s -o ".${target}" "https://raw.githubusercontent.com/heitorpolidoro/heitorpolidoro/master/${target}"
+}
 
-wget https://raw.githubusercontent.com/heitorpolidoro/projects-actions-health/master/README-template.md
+download README-template.md
+echo "Replacing in README-template.md"
 repo=$(pwd | sed -e "s;^$HOME;~;" | sed -e "s;^~/workspace/;;")
-sed -i "s;\$repo;$repo;" README-template.md
-mkdir .github/workflows -p
-cd .github
-wget https://raw.githubusercontent.com/heitorpolidoro/projects-actions-health/master/CODEOWNERS
-wget https://raw.githubusercontent.com/heitorpolidoro/projects-actions-health/master/FUNDING.yml
-cd workflows
-wget https://raw.githubusercontent.com/heitorpolidoro/projects-actions-health/master/ci_cd.yml
-wget https://raw.githubusercontent.com/heitorpolidoro/projects-actions-health/master/create.yml
-wget https://raw.githubusercontent.com/heitorpolidoro/projects-actions-health/master/release.yml
+sed -i '' -e "s/\$repo/${repo}/g" .README-template.md
+mv .README-template.md README.md
+mkdir -p .github/workflows
+download github/CODEOWNERS
+download github/FUNDING.yml
+download github/workflows/ci_cd.yml
+download github/workflows/create.yml
+download github/workflows/release.yml

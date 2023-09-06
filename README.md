@@ -22,7 +22,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
   [![LeetCode](https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06)](https://www.leetcode.com/heitorpolidoro)
   [![HackerEarth](https://img.shields.io/badge/HackerEarth-%232C3454.svg?style=for-the-badge&logo=HackerEarth&logoColor=Blue)](https://www.hackerearth.com/@heitor.polidoro)
 ---
-  [![trophy](https://github-profile-trophy.vercel.app/?username=heitorpolidoro&theme=darkhub&row=1&column=6&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
+  [![trophy](https://github-profile-trophy.vercel.app/?username=heitorpolidoro&theme=darkhub&row=1&column=7&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
 <!--
 
 ---
@@ -33,9 +33,13 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
   <!-- - 👯 I’m looking to collaborate on ... -->
 
 ---
+<div align="center">
+
 ![Heitor Polidoro's GitHub stats](https://github-readme-stats.vercel.app/api/?username=heitorpolidoro&show_icons=true&theme=dark&show=reviews,prs_merged,prs_merged_percentage&rank_icon=github&card_width=500px&hide_border=true)<br>
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=heitorpolidoro&theme=dark&date_format=M%20j%5B%2C%20Y%5D&card_width=500px&hide_border=true)](https://git.io/streak-stats)<br>
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=heitorpolidoro&theme=dark&layout=compact&card_width=500px&hide_border=true)
+</div>
+
 ---
 <h3 align="left">Languages and Tools:</h3>
 <!-- Tools -->

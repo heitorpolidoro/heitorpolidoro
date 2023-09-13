@@ -1,0 +1,45 @@
+  name: Build README
+
+  on:
+    push:
+    workflow_dispatch:
+    schedule:
+      - cron: '0 0 * * *'
+
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v3
+
+        - name: Set up Python 3.11
+          uses: actions/setup-python@v4
+          with:
+            python-version: 3.11
+            cache: 'pip'
+
+        - name: Install dependencies
+          run: |
+            python -m pip install --upgrade pip
+            if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+        - name: Build README
+          run: |
+            python build_readme.py
+
+        - uses: stefanzweifel/git-auto-commit-action@v4
+          with:
+            commit_message: "Update README"
+            commit_user_name: README Bot
+            commit_user_email: readme[bot]@users.noreply.github.com"
+
+        # TODO ACTION?
+#        - name: Commit and push if changed
+#          run: |-
+#            git diff-index --quiet HEAD || exit 0
+#            git config --global user.email "actions@users.noreply.github.com"
+#            git config --global user.name "README[bot]"
+#            git add -A
+#            git commit -m "Updated README"
+#            git push

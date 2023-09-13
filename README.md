@@ -23,12 +23,14 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
   [![HackerEarth](https://img.shields.io/badge/HackerEarth-%232C3454.svg?style=for-the-badge&logo=HackerEarth&logoColor=Blue)](https://www.hackerearth.com/@heitor.polidoro)
 ---
   [![trophy](https://github-profile-trophy.vercel.app/?username=heitorpolidoro&theme=darkhub&row=1&column=7&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
-<!--
 
 ---
-  - 🔭 I’m currently working on:
-  [![Profile](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=heitorpolidoro&theme=dark)](https://github.com/heitorpolidoro/heitorpolidoro)
--->
+<!-- working_on starts -->
+
+### 🔭 I’m currently working on:
+
+<!-- working_on ends -->
+  
   <!-- - 🌱 I’m currently learning ... -->
   <!-- - 👯 I’m looking to collaborate on ... -->
 
@@ -82,6 +84,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 
 ---
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=heitorpolidoro&theme=github-compact&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
 <!--
 ### 🔝 Top Contributed Repo
 ![Heitor Polidoro's GitHub Repository Contribution stats](https://github-contributor-stats.vercel.app/api?username=heitorpolidoro&limit=5&theme=dark&combine_all_yearly_contributions=true)

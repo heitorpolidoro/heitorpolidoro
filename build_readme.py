@@ -49,7 +49,7 @@ if __name__ == "__main__":
     import github
 
     # Autenticação
-    g = github.Github(os.getenv("GITHUB_TOKEN"))
+    g = github.Github(os.getenv("GITHUB_TOKEN") or os.getenv("GH_TOKEN"))
 
     # Seleciona o repositório
     repo = g.get_user().get_repo("heitorpolidoro")

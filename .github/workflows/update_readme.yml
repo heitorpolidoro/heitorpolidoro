@@ -26,14 +26,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
         run: |
+          pip install octokitpy
           python build_readme.py
           gh auth status
           gh repo list -L 4 --visibility public
-
-      - name: Octokit
-        run: |
-          pip install octokitpy
-          python -c "from octokit import Octokit; print([repo['name'] for repo in Octokit().repos.list_for_user(username='heitorpolidoro').json])"
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:

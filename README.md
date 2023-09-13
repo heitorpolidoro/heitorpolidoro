@@ -26,9 +26,13 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 
 ---
 <!-- working_on starts -->
+
 ### 🔭 I’m currently working on:
 
 [![Profile](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=autocreate-pr&theme=dark)](https://github.com/heitorpolidoro/autocreate-pr)
+[![Profile](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=bashtest&theme=dark)](https://github.com/heitorpolidoro/bashtest)
+[![Profile](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=github_actions_utils&theme=dark)](https://github.com/heitorpolidoro/github_actions_utils)
+[![Profile](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=heitorpolidoro&theme=dark)](https://github.com/heitorpolidoro/heitorpolidoro)
 
 <!-- working_on ends -->
   

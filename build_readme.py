@@ -17,8 +17,9 @@ def replace_section(readme_content, section, content):
 
 
 def get_last_working_repositories(last=4, days=30):
-    return [r.name for r in Github(os.getenv("GITHUB_TOKEN")).get_user("heitorpolidoro").get_repos()[:last] if
-            r.pushed_at.date() > now - datetime.timedelta(days=days)]
+    repos = Github().get_user("heitorpolidoro").get_repos()
+    print(repos)
+    return [r.name for r in repos[:last] if r.pushed_at.date() > now - datetime.timedelta(days=days)]
 
 
 def build_working_on_section():

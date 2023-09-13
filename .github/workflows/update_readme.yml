@@ -24,7 +24,7 @@
 
         - name: Build README
           env:
-            GH_TOKEN: ${{ github.token }}
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           run: |
             python build_readme.py
             gh repo list -L 4 --visibility public

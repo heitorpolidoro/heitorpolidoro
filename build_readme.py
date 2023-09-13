@@ -4,6 +4,8 @@ import pathlib
 import re
 import subprocess
 
+from github import Github
+
 root = pathlib.Path(__file__).parent.resolve()
 now = datetime.datetime.utcnow().date()
 
@@ -14,12 +16,8 @@ def replace_section(readme_content, section, content):
 
 
 def get_last_working_repositories(last=4, days=30):
-    return [
-        r["name"] for r in
-        json.loads(
-            subprocess.check_output(f"gh repo list -L {last} --visibility public --json name,pushedAt".split())) if
-        datetime.datetime.fromisoformat(r["pushedAt"]).date() > now - datetime.timedelta(days=days)
-    ]
+    return [r.name for r in Github().get_user("heitorpolidoro").get_repos()[:1] if
+            r.pushed_at > now - datetime.timedelta(days=days)]
 
 
 def build_working_on_section():

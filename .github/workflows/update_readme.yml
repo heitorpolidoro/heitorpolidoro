@@ -23,8 +23,9 @@ jobs:
           cache: 'pip'
 
       - name: Build README
-#        env:
+        env:
 #          GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip install -r requirements.txt
           python build_readme.py

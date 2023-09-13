@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions: read-all
+#    permissions: read-all
 #        contents: write
 
     steps:
@@ -20,11 +20,11 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: 3.11
-#          cache: 'pip'
+          cache: 'pip'
 
       - name: Build README
-        env:
-          GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
         run: |
           pip install -r requirements.txt
           python build_readme.py
@@ -37,7 +37,6 @@ jobs:
           commit_user_name: README Bot
           commit_user_email: readme[bot]@users.noreply.github.com"
 
-      # TODO ACTION?
 #        - name: Commit and push if changed
 #          run: |-
 #            git diff-index --quiet HEAD || exit 0

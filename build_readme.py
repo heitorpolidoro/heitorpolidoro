@@ -1,11 +1,9 @@
 import datetime
 import json
+import os
 import pathlib
 import re
-import os
 import subprocess
-
-from githubkit import GitHub
 
 root = pathlib.Path(__file__).parent.resolve()
 now = datetime.datetime.utcnow().date()
@@ -57,7 +55,7 @@ if __name__ == "__main__":
     repo = g.get_user().get_repo("heitorpolidoro")
 
     # Obtém o conteúdo do arquivo
-    file = repo.get_file_contents("README.md")
+    file = repo.get_dir_contents("README.md")
 
     # Atualiza o arquivo
     repo.update_file("README.md", "mensagem_do_commit", "novo_conteudo_do_arquivo", file.sha)

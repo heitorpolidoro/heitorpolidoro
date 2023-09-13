@@ -27,6 +27,7 @@
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           run: |
             python build_readme.py
+            gh auth status
             gh repo list -L 4 --visibility public
 
         - uses: stefanzweifel/git-auto-commit-action@v4

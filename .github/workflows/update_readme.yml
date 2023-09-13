@@ -9,7 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-#    permissions: read-all
     permissions:
         contents: write
 
@@ -20,15 +19,14 @@ jobs:
       - name: Set up Python 3.11
         uses: actions/setup-python@v4
         with:
-          python-version: 3.11
+          python-version: '3.11'
           cache: 'pip'
 
+      - run: pip install -r requirements.txt
       - name: Build README
         env:
           GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          pip install -r requirements.txt
           python build_readme.py
 
       - uses: stefanzweifel/git-auto-commit-action@v4
@@ -36,12 +34,3 @@ jobs:
           commit_message: "Update README"
           commit_user_name: README Bot
           commit_user_email: readme[bot]@users.noreply.github.com"
-
-#        - name: Commit and push if changed
-#          run: |-
-#            git diff-index --quiet HEAD || exit 0
-#            git config --global user.email "actions@users.noreply.github.com"
-#            git config --global user.name "README[bot]"
-#            git add -A
-#            git commit -m "Updated README"
-#            git push

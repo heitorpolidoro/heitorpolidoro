@@ -1,6 +1,5 @@
 import datetime
 import json
-import os
 import pathlib
 import re
 import subprocess
@@ -36,27 +35,7 @@ def build_working_on_section():
 
 
 if __name__ == "__main__":
-    # readme = root / "README.md"
-    # readme_content = readme.open().read()
-    # readme_content = replace_section(readme_content, "working_on", build_working_on_section())
-    # readme.open("w").write(readme_content)
-
-    # github = GitHub(os.getenv("GITHUB_TOKEN"))
-    # repos = github.rest.repos.list_for_user(username="heitorpolidoro")
-    # names = [r["name"] for r in repos]
-    # print(names)
-
-    import github
-
-    # Autenticação
-    g = github.Github(os.getenv("GITHUB_TOKEN"))
-
-    # Seleciona o repositório
-    repo = g.get_user().get_repo("heitorpolidoro")
-
-    # Obtém o conteúdo do arquivo
-    file = repo.get_dir_contents("README.md")
-
-    # Atualiza o arquivo
-    repo.update_file("README.md", "mensagem_do_commit", "novo_conteudo_do_arquivo", file.sha)
-
+    readme = root / "README.md"
+    readme_content = readme.open().read()
+    readme_content = replace_section(readme_content, "working_on", build_working_on_section())
+    readme.open("w").write(readme_content)

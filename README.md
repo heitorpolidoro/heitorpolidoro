@@ -29,6 +29,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 
 ### 🔭 I’m currently working on:
 
+[![Profile](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=heitorpolidoro&theme=dark)](https://github.com/heitorpolidoro/heitorpolidoro)
+
 <!-- working_on ends -->
   
   <!-- - 🌱 I’m currently learning ... -->

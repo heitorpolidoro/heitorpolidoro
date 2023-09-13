@@ -25,7 +25,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
   [![trophy](https://github-profile-trophy.vercel.app/?username=heitorpolidoro&theme=darkhub&row=1&column=7&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
 
 ---
-<!-- start: repos -->...the list will be added here...<!-- end: repos -->
+<!-- start: readme-repos-list -->...the list will be added here...<!-- end: readme-repos-list -->
+
 <!-- working_on starts -->
 
 ### 🔭 I’m currently working on:

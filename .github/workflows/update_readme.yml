@@ -14,7 +14,7 @@
           uses: koj-co/readme-repos-list@master
           with:
             token: ${{ secrets.GITHUB_TOKEN }}
-            query: "Octocat in:readme"
+            query: "Octocat in:heitorpolidoro user:heitorpolidoro"
             max: 10
     build:
       runs-on: ubuntu-latest

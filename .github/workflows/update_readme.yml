@@ -1,51 +1,47 @@
-  name: Build README
+name: Build README
 
-  on:
-    push:
-    workflow_dispatch:
-    schedule:
-      - cron: '0 0 * * *'
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
 
-  jobs:
-    list:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Run readme-repos-list
-          uses: koj-co/readme-repos-list@master
-          with:
-            token: ${{ secrets.GITHUB_TOKEN }}
-            query: "Octocat in:heitorpolidoro user:heitorpolidoro"
-            max: 10
-    build:
-      runs-on: ubuntu-latest
-      permissions: read-all
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions: read-all
 #        contents: write
 
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
 
-        - name: Set up Python 3.11
-          uses: actions/setup-python@v4
-          with:
-            python-version: 3.11
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
 #            cache: 'pip'
 
-        - name: Build README
-          env:
-            GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
-          run: |
-            python build_readme.py
-            gh auth status
-            gh repo list -L 4 --visibility public
+      - name: Build README
+        env:
+          GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
+        run: |
+          python build_readme.py
+          gh auth status
+          gh repo list -L 4 --visibility public
 
-        - uses: stefanzweifel/git-auto-commit-action@v4
-          with:
-            commit_message: "Update README"
-            commit_user_name: README Bot
-            commit_user_email: readme[bot]@users.noreply.github.com"
+      - name: Octokit
+        run: |
+          pip install octokitpy
+          python -c "from octokit import Octokit; print([repo['name'] for repo in Octokit().repos.list_for_user(username='heitorpolidoro').json])"
 
-        # TODO ACTION?
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update README"
+          commit_user_name: README Bot
+          commit_user_email: readme[bot]@users.noreply.github.com"
+
+      # TODO ACTION?
 #        - name: Commit and push if changed
 #          run: |-
 #            git diff-index --quiet HEAD || exit 0

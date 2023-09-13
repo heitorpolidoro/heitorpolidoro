@@ -20,6 +20,8 @@
 #            cache: 'pip'
 
         - name: Build README
+          env:
+            GH_TOKEN: ${{ github.token }}
           run: |
             python build_readme.py
 

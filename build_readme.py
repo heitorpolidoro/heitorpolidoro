@@ -43,10 +43,10 @@ if __name__ == "__main__":
     # readme_content = replace_section(readme_content, "working_on", build_working_on_section())
     # readme.open("w").write(readme_content)
 
-    github = GitHub(os.getenv("GITHUB_TOKEN"))
-    repos = github.rest.repos.list_for_user(username="heitorpolidoro")
-    names = [r["name"] for r in repos]
-    print(names)
+    # github = GitHub(os.getenv("GITHUB_TOKEN"))
+    # repos = github.rest.repos.list_for_user(username="heitorpolidoro")
+    # names = [r["name"] for r in repos]
+    # print(names)
 
     import github
 

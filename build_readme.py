@@ -18,7 +18,7 @@ def replace_section(readme_content, section, content):
 
 def get_last_working_repositories(last=4, days=30):
     repos = list(Github().get_user("heitorpolidoro").get_repos())
-    print(repos)
+    print("\n".join([str((r.name, r.pushed_at.date(), now, r.pushed_at.date() > now - datetime.timedelta(days=days))) for r in repos[:last]]))
     return [r.name for r in repos[:last] if r.pushed_at.date() > now - datetime.timedelta(days=days)]
 
 

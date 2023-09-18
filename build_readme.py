@@ -46,7 +46,8 @@ $projects
 
 def build_activity_section(last=5):
     events_to_ignore = {
-        "pullrequestreview"
+        "pullrequestreview",
+        "watch",
     }
     configs = {
         "delete": {

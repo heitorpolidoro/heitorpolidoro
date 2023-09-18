@@ -57,10 +57,10 @@ if __name__ == "__main__":
     readme = root / "README.md"
     readme_content = readme.open().read()
     readme_content = replace_section(readme_content, "working_on", build_working_on_section())
-    from simpleicons.all import icons
-
+    # from simpleicons.all import icons
+    #
     # Get a specific icon by its slug as:
-    print(icons.get('python').__dict__)
-    readme_content += "\n\n---" + icons.get("python").svg
+    # print(icons.get('python').__dict__)
+    # readme_content += "\n\n---" + icons.get("python").svg
     readme.open("w").write(readme_content)
 

@@ -4,8 +4,6 @@ import pathlib
 import re
 from string import Template
 
-import yaml
-
 from github import Github
 
 root = pathlib.Path(__file__).parent.resolve()

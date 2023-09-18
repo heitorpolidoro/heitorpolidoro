@@ -34,7 +34,9 @@ Trophies
 <div align="center">
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=heitorpolidoro&theme=darkhub&row=1&column=7&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
-<!-- ![heitorpolidoro github-trophies](https://stats.dooboo.io/api/github-trophies?login=heitorpolidoro) -->
+<!-- check later
+![heitorpolidoro github-trophies](https://stats.dooboo.io/api/github-trophies?login=heitorpolidoro)
+-->
 </div>
 
 ---
@@ -52,13 +54,20 @@ Trophies
 
 ---
 <!-- Activities -->
-<!--START_SECTION:activity-->
-1. ❗ Opened issue [#33770](https://github.com/timburgan/timburgan/issues/33770) in [timburgan/timburgan](https://github.com/timburgan/timburgan)
-2. 🎉 Merged PR [#4](https://github.com/heitorpolidoro/github_actions_utils/pull/4) in [heitorpolidoro/github_actions_utils](https://github.com/heitorpolidoro/github_actions_utils)
-3. 🗣 Commented on [#4](https://github.com/heitorpolidoro/github_actions_utils/pull/4#issuecomment-1716318695) in [heitorpolidoro/github_actions_utils](https://github.com/heitorpolidoro/github_actions_utils)
-4. ❌ Closed PR [#57](https://github.com/heitorpolidoro/autocreate-pr/pull/57) in [heitorpolidoro/autocreate-pr](https://github.com/heitorpolidoro/autocreate-pr)
-5. ❗ Opened issue [#598](https://github.com/athityakumar/colorls/issues/598) in [athityakumar/colorls](https://github.com/athityakumar/colorls)
-<!--END_SECTION:activity-->
+<details>
+<summary>
+
+### Recent Activities:
+</summary>
+
+<!-- activity: starts -->
+- :outbox_tray: Push in [firstcardapp/fc-server](http://github.com/firstcardapp/fc-server)
+- :wastebasket: Delete main in [heitorpolidoro/heitorpolidoro](http://github.com/heitorpolidoro/heitorpolidoro)
+- :outbox_tray: Push in [heitorpolidoro/heitorpolidoro](http://github.com/heitorpolidoro/heitorpolidoro)
+- :writing_hand: Comment in [firstcardapp/fc-server](http://github.com/firstcardapp/fc-server)
+- :heavy_check_mark: Issue opened in [timburgan/timburgan](http://github.com/timburgan/timburgan) -> [chess|move|b1c3|33763](http://github.com/timburgan/timburgan/issues/33770)
+<!-- activity: ends -->
+</details>
 
 ---
 <div align="center">
@@ -70,9 +79,6 @@ Trophies
 
 ---
 <h3 align="left">Languages and Tools:</h3>
-![](https://img.shields.io/badge/OS-Linux-blue?style=flat&logo=linux&logoColor=white)
-
-
 <!-- Tools -->
 [![Linux](https://skillicons.dev/icons?i=linux&theme=dark)](https://www.linux.org/)
 [![Git](https://skillicons.dev/icons?i=git&theme=dark)](https://git-scm.com/)
@@ -113,14 +119,16 @@ Trophies
 ---
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=heitorpolidoro&theme=github-compact&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
-<!--
+<!-- check later
 ### 🔝 Top Contributed Repo
 ![Heitor Polidoro's GitHub Repository Contribution stats](https://github-contributor-stats.vercel.app/api?username=heitorpolidoro&limit=5&theme=dark&combine_all_yearly_contributions=true)
+---
 -->
 
----
+<!-- check later
 ![heitorpolidoro github-stats](https://stats.dooboo.io/api/github-stats-advanced?login=heitorpolidoro)
 ---
+-->
 <p align="center">
 <a href="https://spotify-github-profile.vercel.app/api/view?uid=12143144338&redirect=true">
   <img src="https://spotify-github-profile.vercel.app/api/view?uid=12143144338&cover_image=true&theme=natemoo-re&show_offline=false&background_color=121212&interchange=true">
@@ -132,10 +140,6 @@ Trophies
 </p>
 
 ---
-<details>
-details
-</details>
-
 
 Tools that I use to build this README:
 - [Shields.io](https://shields.io/)
@@ -147,28 +151,16 @@ Tools that I use to build this README:
 - [Github Readme Activity Graph](https://github.com/Ashutosh00710/github-readme-activity-graph)
 - [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy)
 
-![GitHub Sponsors](https://img.shields.io/github/sponsors/heitorpolidoro)
-![GitHub followers](https://img.shields.io/github/followers/heitorpolidoro)
-![GitHub User's stars](https://img.shields.io/github/stars/heitorpolidoro)
 
-![Visitor Count](https://profile-counter.glitch.me/heitorpolidoro/count.svg)
-<p align="center">
-    <a href="https://github.com/heitorpolidoro?tab=followers" target="_blank"><img alt="Updates" src="https://img.shields.io/badge/--000000?style=flat-square&logo=RSS&logoColor=white"></a>
-    <a href="https://github.com/heitorpolidoro" target="_blank"><img alt="heitorpolidoro" src="https://badges.pufler.dev/visits/heitorpolidoro/heitorpolidoro?logo=GitHub&label=visits&color=success&logoColor=white&style=flat-square"/></a>
-    <a href="https://github.com/heitorpolidoro" target="_blank"><img alt="profile hits" src="https://img.shields.io/jsdelivr/gh/hw/heitorpolidoro/heitorpolidoro?label=hits&style=flat-square"></a>
-    <a href="https://github.com/heitorpolidoro/heitorpolidoro" target="_blank"><img alt="GitHub hits" src="https://img.shields.io/github/last-commit/heitorpolidoro/heitorpolidoro?label=profile%20updated&style=flat-square"></a>
-</p>
+<div align="center">
 
----
+  ![GitHub Sponsors](https://img.shields.io/github/sponsors/heitorpolidoro)
+  ![GitHub followers](https://img.shields.io/github/followers/heitorpolidoro)
+  ![GitHub User's stars](https://img.shields.io/github/stars/heitorpolidoro)
+  <br>
+  <a href="https://github.com/heitorpolidoro?tab=followers" target="_blank"><img alt="Updates" src="https://img.shields.io/badge/--000000?style=flat-square&logo=RSS&logoColor=white"></a>
+  <a href="https://github.com/heitorpolidoro" target="_blank"><img alt="heitorpolidoro" src="https://badges.pufler.dev/visits/heitorpolidoro/heitorpolidoro?logo=GitHub&label=visits&color=success&logoColor=white&style=flat-square"/></a>
+  <a href="https://github.com/heitorpolidoro" target="_blank"><img alt="profile hits" src="https://img.shields.io/jsdelivr/gh/hw/heitorpolidoro/heitorpolidoro?label=hits&style=flat-square"></a>
+  <a href="https://github.com/heitorpolidoro/heitorpolidoro" target="_blank"><img alt="GitHub hits" src="https://img.shields.io/github/last-commit/heitorpolidoro/heitorpolidoro?label=profile%20updated&style=flat-square"></a>
+</div>
 
-
----
-
-
----
-
-
-
----
-<!--GITHUB_REPOS:{"rows": 5}-->
-<!--GITHUB_ACTIVITY:{"rows": 5}-->

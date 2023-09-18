@@ -1,2 +1,1 @@
-GitHubKit==0.10.7
 PyGitHub==1.59.1

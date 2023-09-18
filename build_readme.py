@@ -8,23 +8,27 @@ from github import Github
 
 root = pathlib.Path(__file__).parent.resolve()
 now = datetime.datetime.utcnow().date()
+user = Github().get_user("heitorpolidoro")
 
 
 def replace_section(readme_content, section, content):
     if not re.search(rf"<!-- {section}: starts -->.*<!-- {section}: ends -->", readme_content, flags=re.DOTALL):
-        logging.warning(f"Section {section} no found in README.md\n<!-- {section}: starts -->\n<!-- {section}: ends -->")
+        logging.warning(
+            f"Section {section} no found in README.md\n<!-- {section}: starts -->\n<!-- {section}: ends -->")
     return re.sub(rf"<!-- {section}: starts -->.*<!-- {section}: ends -->",
                   f"<!-- {section}: starts -->\n{content}\n<!-- {section}: ends -->", readme_content, flags=re.DOTALL)
 
 
 def get_last_working_repositories(last=1, days=30):
-    repos = list(Github().get_user("heitorpolidoro").get_repos())
-    return [r for r in repos[:last] if r.pushed_at.date() > now - datetime.timedelta(days=days) and r.name != "heitorpolidoro"]
+    repos = list(user.get_repos())
+    return [r for r in repos[:last] if
+            r.pushed_at.date() > now - datetime.timedelta(days=days) and r.name != "heitorpolidoro"]
 
 
 def build_working_on_section(last=1, days=30):
     def _scape(text):
         return text.replace("_", "__").replace("-", "--").replace(" ", "_")
+
     repos = get_last_working_repositories(last=last, days=days)
 
     current_working_on_template = f"""
@@ -34,33 +38,77 @@ def build_working_on_section(last=1, days=30):
 $projects 
 </div>
 """
-    projects = [f"![{repo.name.title()}](https://img.shields.io/badge/{_scape(repo.name)}-{_scape(repo.description or 'No description')}-lightgreen)" for repo in repos]
+    projects = [
+        f"![{repo.name.title()}](https://img.shields.io/badge/{_scape(repo.name)}-{_scape(repo.description or 'No description')}-lightgreen)"
+        for repo in repos]
     return Template(current_working_on_template).safe_substitute(projects="<br>\n".join(projects))
 
 
-def build_badges_section(sub_sections):
-    badges_template = f"""
-<div align="center">
+def build_activity_section(last=5):
+    events_to_ignore = {
+        "pullrequestreview"
+    }
+    configs = {
+        "delete": {
+            "template": "- :wastebasket: Delete $payload_ref in [$repo](http://github.com/$repo)",
+        },
+        "push": {"icon": "outbox_tray"},
+        "pullrequestreviewcomment": {
+            "title": "Comment",
+            "icon": "writing_hand"
+        },
+        "issues": {
+            "template": "- :heavy_check_mark: Issue $payload_action in [$repo](http://github.com/$repo) -> [$payload_issue_title](http://github.com/$repo/issues/$payload_issue_number)",
+        }
+    }
+    default = """- :$icon: $even_title in [$repo](http://github.com/$repo)"""
+    events = []
+    seen_events = set()
+    count = 0
+    user_events = iter(user.get_events())
+    while count < last:
+        event = next(user_events)
+        event_type = event.type.replace("Event", "").lower()
+        if event_type in events_to_ignore:
+            continue
+        event_key = f"{event_type}_{event.repo.name}"
+        if event_key in seen_events:
+            continue
+        seen_events.add(event_key)
+        count += 1
+        config = configs.get(event_type, {})
+        template = config.get("template", default)
+        attrs = set(re.findall(r"\$([\w.]+)", template))
+        info = {}
+        for attr in attrs:
+            match attr:
+                case "icon":
+                    try:
+                        info[attr] = config["icon"]
+                    except KeyError:
+                        raise ValueError(f"Missing icon for {event_type}")
+                case "even_title":
+                    info[attr] = config.get("title", event_type.title())
+                case "repo":
+                    info[attr] = event.repo.name
+                case _:
+                    aux = event
+                    for a in attr.split("_"):
+                        if isinstance(aux, dict):
+                            aux = aux.get(a)
+                        else:
+                            aux = getattr(aux, a, None)
+                        if aux is None:
+                            break
+                    info[attr] = aux or ""
+        events.append(Template(template).safe_substitute(**info))
 
-$badges 
-</div>
-"""
-    badges = []
-    for sub_section, info in sub_sections.items():
-        badges = [
-
-        ]
-        info["url"] = f"https://img.shields.io/badge/{sub_section}-{info['value']}-{info['color']}"
+    return "\n".join(events)
 
 
 if __name__ == "__main__":
     readme = root / "README.md"
     readme_content = readme.open().read()
     readme_content = replace_section(readme_content, "working_on", build_working_on_section())
-    # from simpleicons.all import icons
-    #
-    # Get a specific icon by its slug as:
-    # print(icons.get('python').__dict__)
-    # readme_content += "\n\n---" + icons.get("python").svg
+    readme_content = replace_section(readme_content, "activity", build_activity_section())
     readme.open("w").write(readme_content)
-

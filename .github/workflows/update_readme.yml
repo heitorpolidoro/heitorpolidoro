@@ -35,7 +35,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.classic.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
           base: header, repositories
           plugin_lines: yes
 

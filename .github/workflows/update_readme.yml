@@ -34,22 +34,21 @@ jobs:
       - name: Example
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.classic.svg
-          token: ${{ secrets.HEITORPOLIDORO_PAT }}
-          base: header, repositories
-          plugin_lines: yes
+          filename: metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: header, activity, community, repositories, metadata
 
-      - name: Update README.md
-        run: |
-          if [[ "$(git status --porcelain)" != "" ]]; then
-          set -x
-          git config user.name github-actions[bot]
-          git config user.email github-actions[bot]@users.noreply.github.com
-          git remote set-url origin https://github.com/heitorpolidoro/heitorpolidoro.git
-          git add .
-          git commit -m "Update README"
-          git push
-          fi
+#      - name: Update README.md
+#        run: |
+#          if [[ "$(git status --porcelain)" != "" ]]; then
+#          set -x
+#          git config user.name github-actions[bot]
+#          git config user.email github-actions[bot]@users.noreply.github.com
+#          git remote set-url origin https://github.com/heitorpolidoro/heitorpolidoro.git
+#          git add .
+#          git commit -m "Update README"
+#          git push
+#          fi
 #
 #      - uses: stefanzweifel/git-auto-commit-action@v4
 #        with:

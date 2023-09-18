@@ -53,11 +53,11 @@ Trophies
 ---
 <!-- Activities -->
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#3368](https://github.com/hoppscotch/hoppscotch/pull/3368) in [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch)
-2. 💪 Opened PR [#3363](https://github.com/hoppscotch/hoppscotch/pull/3363) in [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch)
-3. 🗣 Commented on [#108](https://github.com/jamesgeorge007/github-activity-readme/issues/108#issuecomment-1722245735) in [jamesgeorge007/github-activity-readme](https://github.com/jamesgeorge007/github-activity-readme)
-4. ❗ Opened issue [#108](https://github.com/jamesgeorge007/github-activity-readme/issues/108) in [jamesgeorge007/github-activity-readme](https://github.com/jamesgeorge007/github-activity-readme)
-5. 🚀 Published release [v0.4.2](https://github.com/jamesgeorge007/github-activity-readme/releases/tag/v0.4.2) in [jamesgeorge007/github-activity-readme](https://github.com/jamesgeorge007/github-activity-readme)
+1. ❗ Opened issue [#33770](https://github.com/timburgan/timburgan/issues/33770) in [timburgan/timburgan](https://github.com/timburgan/timburgan)
+2. 🎉 Merged PR [#4](https://github.com/heitorpolidoro/github_actions_utils/pull/4) in [heitorpolidoro/github_actions_utils](https://github.com/heitorpolidoro/github_actions_utils)
+3. 🗣 Commented on [#4](https://github.com/heitorpolidoro/github_actions_utils/pull/4#issuecomment-1716318695) in [heitorpolidoro/github_actions_utils](https://github.com/heitorpolidoro/github_actions_utils)
+4. ❌ Closed PR [#57](https://github.com/heitorpolidoro/autocreate-pr/pull/57) in [heitorpolidoro/autocreate-pr](https://github.com/heitorpolidoro/autocreate-pr)
+5. ❗ Opened issue [#598](https://github.com/athityakumar/colorls/issues/598) in [athityakumar/colorls](https://github.com/athityakumar/colorls)
 <!--END_SECTION:activity-->
 
 ---

@@ -22,22 +22,35 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
   [![LeetCode](https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06)](https://www.leetcode.com/heitorpolidoro)
   [![HackerEarth](https://img.shields.io/badge/HackerEarth-%232C3454.svg?style=for-the-badge&logo=HackerEarth&logoColor=Blue)](https://www.hackerearth.com/@heitor.polidoro)
 ---
-  [![trophy](https://github-profile-trophy.vercel.app/?username=heitorpolidoro&theme=darkhub&row=1&column=7&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
+<!-- Contacts -->
+Trophies
+<div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=heitorpolidoro&theme=darkhub&row=1&column=7&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
+<!-- ![heitorpolidoro github-trophies](https://stats.dooboo.io/api/github-trophies?login=heitorpolidoro) -->
+</div>
 
 ---
-<!-- working_on starts -->
+<!-- working_on: starts -->
+
+<div align="center">
 
 ### 🔭 I’m currently working on:
-
-[![Profile](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=autocreate-pr&theme=dark)](https://github.com/heitorpolidoro/autocreate-pr)
-[![Profile](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=bashtest&theme=dark)](https://github.com/heitorpolidoro/bashtest)
-[![Profile](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=github_actions_utils&theme=dark)](https://github.com/heitorpolidoro/github_actions_utils)
-[![Profile](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=heitorpolidoro&theme=dark)](https://github.com/heitorpolidoro/heitorpolidoro)
-
-<!-- working_on ends -->
-  
+![Autocreate-Pr](https://img.shields.io/badge/autocreate--pr-Automatically_create_a_Pull_Request_and_can_set_to_auto--merge-lightgreen) 
+</div>
+<!-- working_on: ends -->
   <!-- - 🌱 I’m currently learning ... -->
   <!-- - 👯 I’m looking to collaborate on ... -->
+
+---
+<!-- Activities -->
+<!--START_SECTION:activity-->
+1. 💪 Opened PR [#3368](https://github.com/hoppscotch/hoppscotch/pull/3368) in [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch)
+2. 💪 Opened PR [#3363](https://github.com/hoppscotch/hoppscotch/pull/3363) in [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch)
+3. 🗣 Commented on [#108](https://github.com/jamesgeorge007/github-activity-readme/issues/108#issuecomment-1722245735) in [jamesgeorge007/github-activity-readme](https://github.com/jamesgeorge007/github-activity-readme)
+4. ❗ Opened issue [#108](https://github.com/jamesgeorge007/github-activity-readme/issues/108) in [jamesgeorge007/github-activity-readme](https://github.com/jamesgeorge007/github-activity-readme)
+5. 🚀 Published release [v0.4.2](https://github.com/jamesgeorge007/github-activity-readme/releases/tag/v0.4.2) in [jamesgeorge007/github-activity-readme](https://github.com/jamesgeorge007/github-activity-readme)
+<!--END_SECTION:activity-->
 
 ---
 <div align="center">

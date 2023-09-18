@@ -9,12 +9,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-        contents: write
+#    permissions:
+#        contents: write
 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v4
@@ -29,8 +31,19 @@ jobs:
         run: |
           python build_readme.py
 
-      - uses: stefanzweifel/git-auto-commit-action@v4
+#      - uses: stefanzweifel/git-auto-commit-action@v4
+#        with:
+#          commit_message: "Update README"
+#          commit_user_name: README Bot
+#          commit_user_email: readme[bot]@users.noreply.github.com"
+
+      - name: Create README.md
+        uses: actions-js/profile-readme@master
         with:
-          commit_message: "Update README"
-          commit_user_name: README Bot
-          commit_user_email: readme[bot]@users.noreply.github.com"
+          username: heitorpolidoro
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}

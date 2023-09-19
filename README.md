@@ -68,18 +68,11 @@ Trophies
 - :heavy_check_mark: Issue opened in [timburgan/timburgan](http://github.com/timburgan/timburgan) -> [chess|move|b1c3|33763](http://github.com/timburgan/timburgan/issues/33770)
 <!-- activity: ends -->
 </details>
+<details>
+<summary>
 
----
-<div align="center">
-
-![metrics.classic.svg](metrics.svg)
-![Heitor Polidoro's GitHub stats](https://github-readme-stats.vercel.app/api/?username=heitorpolidoro&show_icons=true&theme=dark&show=reviews,prs_merged,prs_merged_percentage&rank_icon=github&card_width=500px&hide_border=true)<br>
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=heitorpolidoro&theme=dark&date_format=M%20j%5B%2C%20Y%5D&card_width=500px&hide_border=true)](https://git.io/streak-stats)<br>
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=heitorpolidoro&theme=dark&layout=compact&card_width=500px&hide_border=true)
-</div>
-
----
-<h3 align="left">Languages and Tools:</h3>
+### Languages and Tools:
+</summary>
 <!-- Tools -->
 [![Linux](https://skillicons.dev/icons?i=linux&theme=dark)](https://www.linux.org/)
 [![Git](https://skillicons.dev/icons?i=git&theme=dark)](https://git-scm.com/)
@@ -111,6 +104,16 @@ Trophies
 [![Mongo DB](https://skillicons.dev/icons?i=mongo)](https://www.mongodb.com/)
 [![Redis](https://skillicons.dev/icons?i=redis)](https://redis.io)
 [![SQLite](https://skillicons.dev/icons?i=sqlite)](https://www.sqlite.org/)
+</details>
+
+---
+<div align="center">
+
+![metrics.svg](metrics.svg)<br>
+![Heitor Polidoro's GitHub stats](https://github-readme-stats.vercel.app/api/?username=heitorpolidoro&show_icons=true&theme=dark&show=reviews,prs_merged,prs_merged_percentage&rank_icon=github&card_width=500px&hide_border=true)<br>
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=heitorpolidoro&theme=dark&date_format=M%20j%5B%2C%20Y%5D&card_width=500px&hide_border=true)](https://git.io/streak-stats)<br>
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=heitorpolidoro&theme=dark&layout=compact&card_width=500px&hide_border=true)
+</div>
 
 ---
 <h3 align="left">My GitHub Actions:</h3>

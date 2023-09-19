@@ -26,7 +26,6 @@ jobs:
           cache: 'pip'
 
       - name: Install requirements
-        if: ${{ steps.cache_pip.outputs.cache-hit != 'true' }}
         run: pip install -r requirements.txt
 
       - name: Build README

@@ -73,6 +73,7 @@ Trophies
 
 ### Languages and Tools:
 </summary>
+
 <!-- Tools -->
 [![Linux](https://skillicons.dev/icons?i=linux&theme=dark)](https://www.linux.org/)
 [![Git](https://skillicons.dev/icons?i=git&theme=dark)](https://git-scm.com/)

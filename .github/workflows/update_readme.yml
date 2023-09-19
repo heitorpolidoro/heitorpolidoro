@@ -19,26 +19,28 @@ jobs:
           persist-credentials: false
 
       - name: Set up Python 3.11
-        id: cp310
+        id: cache_pip
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
           cache: 'pip'
 
-      - run: pip install -r requirements.txt
+      - name: Install requirements
+        if: ${{ steps.cache_pip.outputs.cache-hit != 'true' }}
+        run: pip install -r requirements.txt
+
       - name: Build README
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
         run: |
           python build_readme.py
 
-      - run: echo '${{ steps.cp310.outputs.cache-hit }}'
       - name: Example
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.svg
+          committer_message: "chore: update metrics"
           token: ${{ secrets.HEITORPOLIDORO_PAT }}
           base: header, activity, community, repositories, metadata
+          plugin_achievements: yes
 
 #      - name: Update README.md
 #        run: |

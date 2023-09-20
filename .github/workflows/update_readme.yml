@@ -67,7 +67,7 @@ jobs:
             set -x
             git config user.name github-actions[bot]
             git config user.email github-actions[bot]@users.noreply.github.com
-            git remote add origin git@github.com:heitorpolidoro/heitorpolidoro.git
+#            git remote add origin git@github.com:heitorpolidoro/heitorpolidoro.git
             git add -A
             git commit -m "Update README"
             git push

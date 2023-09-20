@@ -62,14 +62,17 @@ jobs:
 #          git commit -m "chore: update metrics"
 #          git push
       - name: Update README.md
+        env:
+          GITHUB_TOKEN=${{ secrets.HEITORPOLIDORO_PAT }}
         run: |
           if [[ "$(git status --porcelain)" != "" ]]; then
             set -x
+            git config http.sslVerify false
             git config user.name github-actions[bot]
             git config user.email github-actions[bot]@users.noreply.github.com
             git add -A
             git commit -m "Update README"
-            git push
+            git push  "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${REPOSITORY}.git" HEAD:"${BRANCH}";
           fi
 #            git remote add origin git@github.com:heitorpolidoro/heitorpolidoro.git
 #

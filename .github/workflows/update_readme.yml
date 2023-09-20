@@ -60,7 +60,7 @@ jobs:
             git add --all
             git commit -m "chore: update metrics"
             git push
-          else;
+          else
             echo "Nothing changes"
           fi
 #      - name: Update README.md

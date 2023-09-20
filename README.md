@@ -1,9 +1,3 @@
-<style>
-  .icon{
-      filter: invert(76%) sepia(11%) saturate(25%) hue-rotate(0deg) brightness(88%) contrast(91%);
-  }
-</style>
-
 <h1 align="center">Hi 👋, I'm Heitor Polidoro</h1>
 <h3 align="center">Backend developer</h3>
 
@@ -60,17 +54,11 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 ### Recent Activities:
 </summary>
 
+![](metrics.plugin.followup.svg)
+
+![](metrics.activity.svg)
+
 <!-- activity: starts -->
-- <img src='icons/push.svg' width='12'> Push in <a href='http://github.com/heitorpolidoro/heitorpolidoro'>heitorpolidoro/heitorpolidoro</a>
-- <img src='icons/delete_branch.svg' width='12'> Delete Branch in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
-- <img src='icons/push.svg' width='12'> Push in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
-- <img src='icons/pull_request_merged.svg' width='12'> Pull Request Merged in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
-- <img src='icons/pull_request_opened.svg' width='12'> Pull Request Opened in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
-- <img src='icons/create_branch.svg' width='12'> Create Branch in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
-- <img src='icons/delete_branch.svg' width='12'> Delete Branch in <a href='http://github.com/heitorpolidoro/heitorpolidoro'>heitorpolidoro/heitorpolidoro</a>
-- <img src='icons/comment.svg' width='12'> Comment in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
-- <img src='icons/issue_opened.svg' width='12'> Issue opened in <a href='http://github.com/timburgan/timburgan'>timburgan/timburgan</a> -> <a href='http://github.com/33770'>chess|move|b1c3|33763</a>
-- <img src='icons/push.svg' width='12'> Push in <a href='http://github.com/heitorpolidoro/github_actions_utils'>heitorpolidoro/github_actions_utils</a>
 <!-- activity: ends -->
 </details>
 <details>
@@ -115,7 +103,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 ---
 <div align="center">
 
-![metrics.svg](metrics.svg)<br>
+![](metrics.overall.svg)<br>
 ![Heitor Polidoro's GitHub stats](https://github-readme-stats.vercel.app/api/?username=heitorpolidoro&show_icons=true&theme=dark&show=reviews,prs_merged,prs_merged_percentage&rank_icon=github&card_width=500px&hide_border=true)<br>
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=heitorpolidoro&theme=dark&date_format=M%20j%5B%2C%20Y%5D&card_width=500px&hide_border=true)](https://git.io/streak-stats)<br>
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=heitorpolidoro&theme=dark&layout=compact&card_width=500px&hide_border=true)

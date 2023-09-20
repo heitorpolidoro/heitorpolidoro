@@ -21,7 +21,7 @@ jobs:
       - name: Metrics
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.svg
+          filename: metrics.overall.svg
           token: ${{ secrets.HEITORPOLIDORO_PAT }}
           base: header, activity, community, repositories, metadata
           output_action: none
@@ -38,7 +38,7 @@ jobs:
       - name: Opened on user's repositories
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.followup.svg
+          filename: metrics.followup.svg
           token: ${{ secrets.HEITORPOLIDORO_PAT }}
           base: ""
           plugin_followup: yes

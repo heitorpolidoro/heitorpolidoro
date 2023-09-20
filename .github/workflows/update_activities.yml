@@ -28,11 +28,11 @@ jobs:
       - name: Install requirements
         run: pip install -r requirements.txt
 
-      - name: Build README
-        env:
-          GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
-        run: |
-          python build_readme.py
+#      - name: Build README
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
+#        run: |
+#          python build_readme.py
 
       - name: Recent activity
         uses: lowlighter/metrics@latest

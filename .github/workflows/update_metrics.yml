@@ -4,7 +4,7 @@ on:
   push:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   build:
@@ -18,21 +18,22 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Set up Python 3.11
-        id: cache_pip
-        uses: actions/setup-python@v4
+      - name: Metrics
+        uses: lowlighter/metrics@latest
         with:
-          python-version: '3.11'
-          cache: 'pip'
+          filename: metrics.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: header, activity, community, repositories, metadata
+          output_action: none
 
-      - name: Install requirements
-        run: pip install -r requirements.txt
-
-      - name: Build README
-        env:
-          GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
-        run: |
-          python build_readme.py
+      - name: Detailed display
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.achievements.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: ""
+          plugin_achievements: yes
+          output_action: none
 
       - name: Update README.md
         env:

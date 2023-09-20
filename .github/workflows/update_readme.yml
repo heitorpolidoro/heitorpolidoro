@@ -53,7 +53,7 @@ jobs:
 
       - name: Update README.md
         env:
-          GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           ls
           sudo mv /metrics_renders/* ./

@@ -51,27 +51,22 @@ jobs:
           output_action: none
 
       - name: Commit changes
-        uses: lowlighter/metrics@latest
         run: |
-          set +e
-          git checkout metrics-renders
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          sudo mv /metrics_renders/* ./
-          git add --all
-          git commit -m "chore: update metrics"
-          git push
+          if [[ "$(git status --porcelain)" != "" ]]; then
+            set +e
+            git config user.name github-actions[bot]
+            git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+            sudo mv /metrics_renders/* ./
+            git add --all
+            git commit -m "chore: update metrics"
+            git push
+          else;
+            echo "Nothing changes"
+          fi
 #      - name: Update README.md
 #        run: |
-#          if [[ "$(git status --porcelain)" != "" ]]; then
-#          set -x
-#          git config user.name github-actions[bot]
 #          git config user.email github-actions[bot]@users.noreply.github.com
 #          git remote set-url origin https://github.com/heitorpolidoro/heitorpolidoro.git
-#          git add .
-#          git commit -m "Update README"
-#          git push
-#          fi
 #
 #      - uses: stefanzweifel/git-auto-commit-action@v4
 #        with:

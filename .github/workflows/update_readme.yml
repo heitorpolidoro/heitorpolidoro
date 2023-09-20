@@ -55,6 +55,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
         run: |
+          ls
+          sudo mv /metrics_renders/* ./
+          ls
           if [[ "$(git status --porcelain)" != "" ]]; then
             set -x
             git config http.sslVerify false

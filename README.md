@@ -61,11 +61,16 @@ Trophies
 </summary>
 
 <!-- activity: starts -->
-- :outbox_tray: Push in [heitorpolidoro/heitorpolidoro](http://github.com/heitorpolidoro/heitorpolidoro)
-- :wastebasket: Delete main in [heitorpolidoro/heitorpolidoro](http://github.com/heitorpolidoro/heitorpolidoro)
-- :heavy_check_mark: Issue opened in [timburgan/timburgan](http://github.com/timburgan/timburgan) -> [chess|move|b1c3|33763](http://github.com/timburgan/timburgan/issues/33770)
-- :outbox_tray: Push in [heitorpolidoro/github_actions_utils](http://github.com/heitorpolidoro/github_actions_utils)
-- :wastebasket: Delete CU-86a0tfquf_new-workflow in [heitorpolidoro/github_actions_utils](http://github.com/heitorpolidoro/github_actions_utils)
+- <img src='icons/push.svg' width='10'> Push in <a href='http://github.com/heitorpolidoro/heitorpolidoro'>heitorpolidoro/heitorpolidoro</a>
+- <img src='icons/delete_branch.svg' width='10'> Delete Branch in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
+- <img src='icons/push.svg' width='10'> Push in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
+- <img src='icons/pull_request_merged.svg' width='10'> Pull Request Merged in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
+- <img src='icons/pull_request_opened.svg' width='10'> Pull Request Opened in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
+- <img src='icons/create_branch.svg' width='10'> Create Branch in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
+- <img src='icons/delete_branch.svg' width='10'> Delete Branch in <a href='http://github.com/heitorpolidoro/heitorpolidoro'>heitorpolidoro/heitorpolidoro</a>
+- <img src='icons/comment.svg' width='10'> Comment in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
+- <img src='icons/issue_opened.svg' width='10'> Issue opened in <a href='http://github.com/timburgan/timburgan'>timburgan/timburgan</a> -> <a href='http://github.com/33770'>chess|move|b1c3|33763</a>
+- <img src='icons/push.svg' width='10'> Push in <a href='http://github.com/heitorpolidoro/github_actions_utils'>heitorpolidoro/github_actions_utils</a>
 <!-- activity: ends -->
 </details>
 <details>
@@ -115,6 +120,15 @@ Trophies
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=heitorpolidoro&theme=dark&date_format=M%20j%5B%2C%20Y%5D&card_width=500px&hide_border=true)](https://git.io/streak-stats)<br>
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=heitorpolidoro&theme=dark&layout=compact&card_width=500px&hide_border=true)
 </div>
+<details>
+<summary>
+
+### Achievements
+</summary>
+
+![metrics.achievements.svg](metrics.achievements.svg)
+</details>
+
 
 ---
 <h3 align="left">My GitHub Actions:</h3>

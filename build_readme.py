@@ -1,5 +1,6 @@
 import datetime
 import logging
+import os
 import pathlib
 import re
 from string import Template
@@ -8,7 +9,7 @@ from github import Github
 
 root = pathlib.Path(__file__).parent.resolve()
 now = datetime.datetime.utcnow().date()
-user = Github().get_user("heitorpolidoro")
+user = Github(os.getenv("GITHUB_TOKEN")).get_user("heitorpolidoro")
 
 
 def replace_section(readme_content, section, content):
@@ -44,52 +45,59 @@ $projects
     return Template(current_working_on_template).safe_substitute(projects="<br>\n".join(projects))
 
 
-def build_activity_section(last=5):
+def build_activity_section(last=10):
     events_to_ignore = {
         "pullrequestreview",
         "watch",
     }
-    configs = {
-        "delete": {
-            "template": "- :wastebasket: Delete $payload_ref in [$repo](http://github.com/$repo)",
-        },
-        "push": {"icon": "outbox_tray"},
-        "pullrequestreviewcomment": {
-            "title": "Comment",
-            "icon": "writing_hand"
-        },
-        "issues": {
-            "template": "- :heavy_check_mark: Issue $payload_action in [$repo](http://github.com/$repo) -> [$payload_issue_title](http://github.com/$repo/issues/$payload_issue_number)",
-        }
-    }
-    default = """- :$icon: $even_title in [$repo](http://github.com/$repo)"""
+
     events = []
     seen_events = set()
     count = 0
     user_events = iter(user.get_events())
     while count < last:
+        template = "- <img src='$icon' width='10'> $event_title in <a href='http://github.com/$repo'>$repo</a>"
         event = next(user_events)
         event_type = event.type.replace("Event", "").lower()
         if event_type in events_to_ignore:
             continue
+
+        match event_type:
+            case "create" | "delete":
+                event_type = f"{event_type}_{event.payload['ref_type']}"
+            case "pullrequestreviewcomment":
+                event_type = "comment"
+            case "issues":
+                event_type = f"issue_{event.payload['action']}"
+                template = (
+                    "- <img src='$icon' width='10'> Issue $payload_action in <a href='http://github.com/$repo'>"
+                    "$repo</a> -> <a href='http://github.com/$payload_issue_number'>$payload_issue_title</a>"
+                )
+            case "pullrequest":
+                event_type = f"pull_request_{event.payload['action']}"
+                if event.payload['action'] == "closed":
+                    if not event.payload['pull_request']['merged']:
+                        event_type += "_not"
+                    else:
+                        event_type = event_type.replace("_closed", "")
+                    event_type += "_merged"
+
         event_key = f"{event_type}_{event.repo.name}"
         if event_key in seen_events:
             continue
         seen_events.add(event_key)
         count += 1
-        config = configs.get(event_type, {})
-        template = config.get("template", default)
         attrs = set(re.findall(r"\$([\w.]+)", template))
         info = {}
         for attr in attrs:
             match attr:
                 case "icon":
                     try:
-                        info[attr] = config["icon"]
+                        info[attr] = f"icons/{event_type}.svg"
                     except KeyError:
                         raise ValueError(f"Missing icon for {event_type}")
-                case "even_title":
-                    info[attr] = config.get("title", event_type.title())
+                case "event_title":
+                    info[attr] = event_type.replace("_", " ").title()
                 case "repo":
                     info[attr] = event.repo.name
                 case _:
@@ -102,6 +110,7 @@ def build_activity_section(last=5):
                         if aux is None:
                             break
                     info[attr] = aux or ""
+
         events.append(Template(template).safe_substitute(**info))
 
     return "\n".join(events)

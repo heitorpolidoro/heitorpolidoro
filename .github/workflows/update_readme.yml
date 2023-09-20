@@ -29,6 +29,8 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build README
+        env:
+          GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
         run: |
           python build_readme.py
 
@@ -36,7 +38,6 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.svg
-#          committer_message: "chore: update metrics"
           token: ${{ secrets.HEITORPOLIDORO_PAT }}
           base: header, activity, community, repositories, metadata
           output_action: none
@@ -50,17 +51,6 @@ jobs:
           plugin_achievements: yes
           output_action: none
 
-#      - name: Commit changes
-#        uses: lowlighter/metrics@latest
-#        run: |
-#          set +e
-#          git checkout metrics-renders
-#          git config user.name github-actions[bot]
-#          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-#          sudo mv /metrics_renders/* ./
-#          git add --all
-#          git commit -m "chore: update metrics"
-#          git push
       - name: Update README.md
         env:
           GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
@@ -73,11 +63,6 @@ jobs:
             git add -A
             git commit -m "Update README"
             git push "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/heitorpolidoro/heitorpolidoro.git" HEAD:master
+          else
+            echo "Nothing to commit"
           fi
-#            git remote add origin git@github.com:heitorpolidoro/heitorpolidoro.git
-#
-#      - uses: stefanzweifel/git-auto-commit-action@v4
-#        with:
-#          commit_message: "Update README"
-#          commit_user_name: README Bot
-#          commit_user_email: readme[bot]@users.noreply.github.com"

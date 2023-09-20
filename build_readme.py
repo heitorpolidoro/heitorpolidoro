@@ -56,7 +56,9 @@ def build_activity_section(last=10):
     count = 0
     user_events = iter(user.get_events())
     while count < last:
-        template = "- <img src='$icon' width='10'> $event_title in <a href='http://github.com/$repo'>$repo</a>"
+        template = (
+            "- <img class='icon' src='$icon' width='10'> $event_title in <a href='http://github.com/$repo'>$repo</a>"
+        )
         event = next(user_events)
         event_type = event.type.replace("Event", "").lower()
         if event_type in events_to_ignore:

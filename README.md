@@ -54,17 +54,13 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 ### Recent Activities:
 </summary>
 
+<style>
+  .icon{
+      filter: invert(76%) sepia(11%) saturate(25%) hue-rotate(0deg) brightness(88%) contrast(91%);
+  }
+</style>
 <!-- activity: starts -->
-- <img src='icons/push.svg' width='10'> Push in <a href='http://github.com/heitorpolidoro/heitorpolidoro'>heitorpolidoro/heitorpolidoro</a>
-- <img src='icons/delete_branch.svg' width='10'> Delete Branch in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
-- <img src='icons/push.svg' width='10'> Push in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
-- <img src='icons/pull_request_merged.svg' width='10'> Pull Request Merged in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
-- <img src='icons/pull_request_opened.svg' width='10'> Pull Request Opened in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
-- <img src='icons/create_branch.svg' width='10'> Create Branch in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
-- <img src='icons/delete_branch.svg' width='10'> Delete Branch in <a href='http://github.com/heitorpolidoro/heitorpolidoro'>heitorpolidoro/heitorpolidoro</a>
-- <img src='icons/comment.svg' width='10'> Comment in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
-- <img src='icons/issue_opened.svg' width='10'> Issue opened in <a href='http://github.com/timburgan/timburgan'>timburgan/timburgan</a> -> <a href='http://github.com/33770'>chess|move|b1c3|33763</a>
-- <img src='icons/push.svg' width='10'> Push in <a href='http://github.com/heitorpolidoro/github_actions_utils'>heitorpolidoro/github_actions_utils</a>
+
 <!-- activity: ends -->
 </details>
 <details>

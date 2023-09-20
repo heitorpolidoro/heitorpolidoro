@@ -55,8 +55,27 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 </summary>
 
 <!-- activity: starts -->
-- <img src='icons/push.svg' width='10'> Push in <a href='http://github.com/heitorpolidoro/heitorpolidoro'>heitorpolidoro/heitorpolidoro</a>
-- <img src='icons/delete_branch.svg' width='10'> Delete Branch in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode variables go here */
+    .icon{
+        filter: invert(100%) sepia(10%) saturate(7459%) hue-rotate(260deg) brightness(115%) contrast(108%);
+    }
+  }
+}
+
+/* Fallback for older browsers or manual mode */
+body.dark {
+  /* Dark mode variables go here */
+  .icon{
+      filter: invert(100%) sepia(10%) saturate(7459%) hue-rotate(260deg) brightness(115%) contrast(108%);
+  }
+}
+</style>
+
+- <img class="icon" src='icons/push.svg' width='10'> Push in <a href='http://github.com/heitorpolidoro/heitorpolidoro'>heitorpolidoro/heitorpolidoro</a>
+- <img class="other" src='icons/delete_branch.svg' width='10'> Delete Branch in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
 - <img src='icons/push.svg' width='10'> Push in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
 - <img src='icons/pull_request_merged.svg' width='10'> Pull Request Merged in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>
 - <img src='icons/pull_request_opened.svg' width='10'> Pull Request Opened in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>

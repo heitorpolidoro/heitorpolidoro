@@ -35,6 +35,14 @@ jobs:
           plugin_achievements: yes
           output_action: none
 
+      - name: Opened on user's repositories
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.followup.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: ""
+          plugin_followup: yes
+
       - name: Update README.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

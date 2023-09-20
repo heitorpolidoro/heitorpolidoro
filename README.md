@@ -1,3 +1,9 @@
+<style>
+  .icon{
+      filter: invert(76%) sepia(11%) saturate(25%) hue-rotate(0deg) brightness(88%) contrast(91%);
+  }
+</style>
+
 <h1 align="center">Hi 👋, I'm Heitor Polidoro</h1>
 <h3 align="center">Backend developer</h3>
 
@@ -54,11 +60,6 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 ### Recent Activities:
 </summary>
 
-<style>
-  .icon{
-      filter: invert(76%) sepia(11%) saturate(25%) hue-rotate(0deg) brightness(88%) contrast(91%);
-  }
-</style>
 <!-- activity: starts -->
 - <img class='icon' src='icons/push.svg' width='10'> Push in <a href='http://github.com/heitorpolidoro/heitorpolidoro'>heitorpolidoro/heitorpolidoro</a>
 - <img class='icon' src='icons/delete_branch.svg' width='10'> Delete Branch in <a href='http://github.com/firstcardapp/fc-server'>firstcardapp/fc-server</a>

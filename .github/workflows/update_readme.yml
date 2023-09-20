@@ -4,7 +4,7 @@ on:
   push:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 * * * *'
 
 jobs:
   build:
@@ -56,7 +56,7 @@ jobs:
             set +e
             git config user.name github-actions[bot]
             git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-            git remote set-url origin https://github.com/heitorpolidoro/heitorpolidoro.git
+            git remote set-url origin origin git@github.com:heitorpolidoro/heitorpolidoro.git
             sudo mv /metrics_renders/* ./
             git add --all
             git commit -m "chore: update metrics"

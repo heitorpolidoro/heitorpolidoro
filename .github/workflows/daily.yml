@@ -1,10 +1,10 @@
-name: Build README
+name: Update README Daily
 
 on:
   push:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   build:
@@ -18,31 +18,31 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Set up Python 3.11
-        id: cache_pip
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-          cache: 'pip'
-
-      - name: Install requirements
-        run: pip install -r requirements.txt
-
-#      - name: Build README
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
-#        run: |
-#          python build_readme.py
-
-      - name: Recent activity
+      - name: Metrics
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.activity.svg
+          filename: metrics.overall.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: header, activity, community, repositories, metadata
+          output_action: none
+
+      - name: Detailed display
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.achievements.svg
           token: ${{ secrets.HEITORPOLIDORO_PAT }}
           base: ""
-          plugin_activity: yes
-          plugin_activity_limit: 10
-          plugin_activity_days: 0
+          plugin_achievements: yes
+          output_action: none
+
+      - name: Opened on user's repositories
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.followup.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: ""
+          plugin_followup: yes
+          plugin_followup_indepth: yes
 
       - name: Update README.md
         env:
@@ -54,7 +54,7 @@ jobs:
             git config user.name github-actions[bot]
             git config user.email github-actions[bot]@users.noreply.github.com
             git add -A
-            git commit -m "Update README - activities"
+            git commit -m "Update README - metrics"
             git push "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/heitorpolidoro/heitorpolidoro.git" HEAD:master
           else
             echo "Nothing to commit"

@@ -54,7 +54,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 ### Recent Activities:
 </summary>
 
-![](metrics.plugin.followup.svg)
+![](metrics.followup.svg)
 
 ![](metrics.activity.svg)
 

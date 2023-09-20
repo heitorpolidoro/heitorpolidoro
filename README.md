@@ -22,24 +22,18 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 [![HackerRank](https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white)](https://www.hackerrank.com/heitor_polidoro)
 [![LeetCode](https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06)](https://www.leetcode.com/heitorpolidoro)
 [![HackerEarth](https://img.shields.io/badge/HackerEarth-%232C3454.svg?style=for-the-badge&logo=HackerEarth&logoColor=Blue)](https://www.hackerearth.com/@heitor.polidoro)
-
-</div>
-<div align="center">
-<img src="https://hackerrank-badge.herokuapp.com/heitorpoidoro">
 </div>
 
 ---
-<!-- Contacts -->
-Trophies
+<!-- Trophies -->
+<!--
 <div align="center">
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=heitorpolidoro&theme=darkhub&row=1&column=7&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
-<!-- check later
-![heitorpolidoro github-trophies](https://stats.dooboo.io/api/github-trophies?login=heitorpolidoro)
--->
 </div>
 
 ---
+-->
 <!-- working_on: starts -->
 
 <div align="center">

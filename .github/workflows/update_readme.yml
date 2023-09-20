@@ -37,7 +37,7 @@ jobs:
         with:
           filename: metrics.svg
 #          committer_message: "chore: update metrics"
-#          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
           base: header, activity, community, repositories, metadata
           output_action: none
 
@@ -45,6 +45,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.achievements.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
           base: ""
           plugin_achievements: yes
           output_action: none

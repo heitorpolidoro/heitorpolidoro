@@ -42,6 +42,7 @@ jobs:
           token: ${{ secrets.HEITORPOLIDORO_PAT }}
           base: ""
           plugin_followup: yes
+          plugin_followup_indepth: yes
 
       - name: Update README.md
         env:

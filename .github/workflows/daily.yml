@@ -26,7 +26,7 @@ jobs:
           base: header, activity, community, repositories, metadata
           output_action: none
 
-      - name: Detailed display
+      - name: Metrics Achievements
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.achievements.svg
@@ -35,7 +35,7 @@ jobs:
           plugin_achievements: yes
           output_action: none
 
-      - name: Opened on user's repositories
+      - name: Metrics Followup
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.followup.svg
@@ -44,7 +44,7 @@ jobs:
           plugin_followup: yes
           plugin_followup_indepth: yes
 
-      - name: Update README.md
+      - name: Update images
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

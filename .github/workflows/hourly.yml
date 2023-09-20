@@ -34,16 +34,17 @@ jobs:
 #        run: |
 #          python build_readme.py
 
-      - name: Recent activity
+      - name: Metrics Activity
         uses: lowlighter/metrics@latest
         with:
+          filename: metrics.activity.svg
           token: ${{ secrets.HEITORPOLIDORO_PAT }}
           base: ""
           plugin_activity: yes
           plugin_activity_limit: 10
           plugin_activity_days: 0
 
-      - name: Languages
+      - name: Metrics Languages
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.languages.svg
@@ -53,7 +54,7 @@ jobs:
 #          plugin_languages_details:
           commits_authoring: firstname lastname, username, username@users.noreply.github.com
 
-      - name: Update README.md
+      - name: Update Images
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

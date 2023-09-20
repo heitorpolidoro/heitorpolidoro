@@ -63,7 +63,7 @@ jobs:
 #          git push
       - name: Update README.md
         env:
-          GITHUB_TOKEN=${{ secrets.HEITORPOLIDORO_PAT }}
+          GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
         run: |
           if [[ "$(git status --porcelain)" != "" ]]; then
             set -x

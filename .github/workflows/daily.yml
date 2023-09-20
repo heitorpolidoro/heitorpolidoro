@@ -18,7 +18,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Metrics
+      - name: Metrics Overall
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.overall.svg

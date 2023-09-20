@@ -56,6 +56,7 @@ jobs:
             set +e
             git config user.name github-actions[bot]
             git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+            git remote set-url origin https://github.com/heitorpolidoro/heitorpolidoro.git
             sudo mv /metrics_renders/* ./
             git add --all
             git commit -m "chore: update metrics"
@@ -66,7 +67,6 @@ jobs:
 #      - name: Update README.md
 #        run: |
 #          git config user.email github-actions[bot]@users.noreply.github.com
-#          git remote set-url origin https://github.com/heitorpolidoro/heitorpolidoro.git
 #
 #      - uses: stefanzweifel/git-auto-commit-action@v4
 #        with:

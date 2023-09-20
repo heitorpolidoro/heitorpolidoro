@@ -61,11 +61,11 @@ Trophies
 </summary>
 
 <!-- activity: starts -->
-- :outbox_tray: Push in [firstcardapp/fc-server](http://github.com/firstcardapp/fc-server)
-- :wastebasket: Delete main in [heitorpolidoro/heitorpolidoro](http://github.com/heitorpolidoro/heitorpolidoro)
 - :outbox_tray: Push in [heitorpolidoro/heitorpolidoro](http://github.com/heitorpolidoro/heitorpolidoro)
-- :writing_hand: Comment in [firstcardapp/fc-server](http://github.com/firstcardapp/fc-server)
+- :wastebasket: Delete main in [heitorpolidoro/heitorpolidoro](http://github.com/heitorpolidoro/heitorpolidoro)
 - :heavy_check_mark: Issue opened in [timburgan/timburgan](http://github.com/timburgan/timburgan) -> [chess|move|b1c3|33763](http://github.com/timburgan/timburgan/issues/33770)
+- :outbox_tray: Push in [heitorpolidoro/github_actions_utils](http://github.com/heitorpolidoro/github_actions_utils)
+- :wastebasket: Delete CU-86a0tfquf_new-workflow in [heitorpolidoro/github_actions_utils](http://github.com/heitorpolidoro/github_actions_utils)
 <!-- activity: ends -->
 </details>
 <details>

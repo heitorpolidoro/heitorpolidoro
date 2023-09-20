@@ -34,6 +34,16 @@ jobs:
         run: |
           python build_readme.py
 
+      - name: Recent activity
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.activity.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_activity: yes
+          plugin_activity_limit: 10
+          plugin_activity_days: 0
+
       - name: Update README.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -44,7 +54,7 @@ jobs:
             git config user.name github-actions[bot]
             git config user.email github-actions[bot]@users.noreply.github.com
             git add -A
-            git commit -m "Update README"
+            git commit -m "Update README - activities"
             git push "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/heitorpolidoro/heitorpolidoro.git" HEAD:master
           else
             echo "Nothing to commit"

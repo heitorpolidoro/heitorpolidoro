@@ -25,6 +25,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v3
         with:
+          name: metrics
           path: /metrics_renders/metrics.overall.svg
           retention-days: 1
 
@@ -47,6 +48,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v3
         with:
+          name: metrics
           path: /metrics_renders/metrics.achievements.svg
           retention-days: 1
 
@@ -70,6 +72,7 @@ jobs:
 #      - name: Upload svg
 #        uses: actions/upload-artifact@v3
 #        with:
+#          name: metrics
 #          path: /metrics_renders/metrics.followup.svg
 #          retention-days: 1
 
@@ -88,8 +91,8 @@ jobs:
 
       - name: Download Artefacts
         uses: actions/download-artifact@v3
-        with:
-          path: images
+#        with:
+#          path: images
 
       - name: Update images
         env:

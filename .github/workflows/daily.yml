@@ -13,8 +13,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
 
       - name: Metrics Overall
         uses: lowlighter/metrics@latest
@@ -27,7 +25,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v3
         with:
-          name: overall
+          name: metrics.overall.svg
           path: /metrics_renders/metrics.overall.svg
           retention-days: 1
 
@@ -37,8 +35,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
 
       - name: Metrics Achievements
         uses: lowlighter/metrics@latest
@@ -52,7 +48,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v3
         with:
-          name: achievements
+          name: metrics.achievements.svg
           path: /metrics_renders/metrics.achievements.svg
           retention-days: 1
 
@@ -62,25 +58,23 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
 
-      - name: Metrics Followup
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.followup.svg
-          token: ${{ secrets.HEITORPOLIDORO_PAT }}
-          base: ""
-          plugin_followup: yes
-          plugin_followup_indepth: yes
-          output_action: none
-
-      - name: Upload svg
-        uses: actions/upload-artifact@v3
-        with:
-          name: followup
-          path: /metrics_renders/metrics.followup.svg
-          retention-days: 1
+#      - name: Metrics Followup
+#        uses: lowlighter/metrics@latest
+#        with:
+#          filename: metrics.followup.svg
+#          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+#          base: ""
+#          plugin_followup: yes
+#          plugin_followup_indepth: yes
+#          output_action: none
+#
+#      - name: Upload svg
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: metrics.followup.svg
+#          path: /metrics_renders/metrics.followup.svg
+#          retention-days: 1
 
   update:
     runs-on: ubuntu-latest
@@ -98,7 +92,7 @@ jobs:
       - name: Download Artefacts
         uses: actions/download-artifact@v3
         with:
-          working-directory: images
+          path: images
 
       - name: Update images
         env:

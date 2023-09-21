@@ -59,22 +59,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-#      - name: Metrics Followup
-#        uses: lowlighter/metrics@latest
-#        with:
-#          filename: metrics.followup.svg
-#          token: ${{ secrets.HEITORPOLIDORO_PAT }}
-#          base: ""
-#          plugin_followup: yes
-#          plugin_followup_indepth: yes
-#          output_action: none
-#
-#      - name: Upload svg
-#        uses: actions/upload-artifact@v3
-#        with:
-#          name: metrics
-#          path: /metrics_renders/metrics.followup.svg
-#          retention-days: 1
+      - name: Metrics Followup
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.followup.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: ""
+          plugin_followup: yes
+          plugin_followup_indepth: yes
+          output_action: none
+
+      - name: Upload svg
+        uses: actions/upload-artifact@v3
+        with:
+          name: metrics
+          path: /metrics_renders/metrics.followup.svg
+          retention-days: 1
 
   update:
     runs-on: ubuntu-latest
@@ -91,14 +91,11 @@ jobs:
 
       - name: Download Artefacts
         uses: actions/download-artifact@v3
-#        with:
-#          path: images
 
       - name: Update images
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git log -1
           if [[ "$(git status --porcelain)" != "" ]]; then
             set -x
             git config http.sslVerify false

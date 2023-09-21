@@ -54,8 +54,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 ### Recent Activities:
 </summary>
 <div align="center">
-<img src="images/metrics.followup.svg">
-<img src="images/metrics.activity.svg">
+<img src="metrics/metrics.followup.svg">
+<img src="metrics/metrics.activity.svg">
 </div>
 <!-- activity: starts -->
 <!-- activity: ends -->
@@ -102,7 +102,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 ---
 <div align="center">
 
-<img src="images/metrics.overall.svg">
+<img src="metrics/metrics.overall.svg">
 
 ![Heitor Polidoro's GitHub stats](https://github-readme-stats.vercel.app/api/?username=heitorpolidoro&show_icons=true&theme=dark&show=reviews,prs_merged,prs_merged_percentage&rank_icon=github&card_width=500px&hide_border=true)<br>
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=heitorpolidoro&theme=dark&date_format=M%20j%5B%2C%20Y%5D&card_width=500px&hide_border=true)](https://git.io/streak-stats)<br>
@@ -114,7 +114,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 ### Achievements
 </summary>
 
-<img src="images/metrics.achievements.svg">
+<img src="metrics/metrics.achievements.svg">
 </details>
 
 

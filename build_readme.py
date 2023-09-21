@@ -122,5 +122,5 @@ if __name__ == "__main__":
     readme = root / "README.md"
     readme_content = readme.open().read()
     readme_content = replace_section(readme_content, "working_on", build_working_on_section())
-    readme_content = replace_section(readme_content, "activity", build_activity_section())
+    # readme_content = replace_section(readme_content, "activity", build_activity_section())
     readme.open("w").write(readme_content)

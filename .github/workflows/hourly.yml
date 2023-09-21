@@ -1,7 +1,6 @@
 name: Update README Hourly
 
 on:
-  push:
   workflow_dispatch:
   schedule:
     - cron: '0 * * * *'
@@ -33,32 +32,7 @@ jobs:
           name: metrics
           path: /metrics_renders/metrics.activity.svg
           retention-days: 1
-  #-------------------------
-  languages:
-    runs-on: ubuntu-latest
-    name: Metrics Languages
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Generating svg
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.languages.svg
-          token: ${{ secrets.HEITORPOLIDORO_PAT }}
-          base: ""
-          plugin_languages: yes
-          plugin_languages_indepth: yes
-          plugin_languages_details: bytes-size, percentage, lines
-          output_action: none
-
-      - name: Upload svg
-        uses: actions/upload-artifact@v3
-        with:
-          name: metrics
-          path: /metrics_renders/metrics.languages.svg
-          retention-days: 1
 
   update:
     runs-on: ubuntu-latest
@@ -90,29 +64,4 @@ jobs:
           else
             echo "Nothing to commit"
           fi
-#  build:
-#    runs-on: ubuntu-latest
-#    permissions:
-#      contents: write
-#
-#    steps:
-#      - name: Checkout
-#        uses: actions/checkout@v3
-#        with:
-#          persist-credentials: false
-#
-#      - name: Set up Python 3.11
-#        id: cache_pip
-#        uses: actions/setup-python@v4
-#        with:
-#          python-version: '3.11'
-#          cache: 'pip'
-#
-#      - name: Install requirements
-#        run: pip install -r requirements.txt
 
-#      - name: Build README
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
-#        run: |
-#          python build_readme.py

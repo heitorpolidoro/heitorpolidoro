@@ -154,6 +154,32 @@ jobs:
           path: /metrics_renders/metrics.leetcode.svg
           retention-days: 1
 
+  stackoverflow:
+    name: Metrics Stackoverflow
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generating svg
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.stackoverflow.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: ""
+          plugin_stackoverflow: yes
+          plugin_stackoverflow_user: 16155315
+          plugin_stackoverflow_sections: answers-top, answers-recent, questions-top, questions-recent
+          output_action: none
+
+      - name: Upload svg
+        uses: actions/upload-artifact@v3
+        with:
+          name: metrics
+          path: /metrics_renders/metrics.stackoverflow.svg
+          retention-days: 1
+
   update:
     runs-on: ubuntu-latest
     needs:
@@ -163,6 +189,7 @@ jobs:
       - language
       - sponsor
       - leetcode
+      - stackoverflow
 
     steps:
       - name: Checkout

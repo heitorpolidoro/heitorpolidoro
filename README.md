@@ -134,6 +134,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 </summary>
 
 <img src="metrics/metrics.leetcode.svg">
+<img src="metrics/metrics.stackoverflow.svg">
 </details>
 
 

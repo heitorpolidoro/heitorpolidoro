@@ -6,6 +6,30 @@ on:
     - cron: '0 0 * * *'
 
 jobs:
+  activity:
+    runs-on: ubuntu-latest
+    name: Metrics Activity
+
+    steps:
+      - name: Generating svg
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.activity.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_activity: yes
+          plugin_activity_limit: 10
+          plugin_activity_days: 0
+          plugin_activity_skipped: heitorpolidoro
+          output_action: none
+
+      - name: Upload svg
+        uses: actions/upload-artifact@v3
+        with:
+          name: metrics
+          path: /metrics_renders/metrics.activity.svg
+          retention-days: 1
+
   overall:
     name: Metrics Overall
     runs-on: ubuntu-latest

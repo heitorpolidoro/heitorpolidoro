@@ -202,12 +202,12 @@ jobs:
         run: |
           if [[ "$(git status --porcelain)" != "" ]]; then
             set -x
-            git pull
             git config http.sslVerify false
             git config user.name github-actions[bot]
             git config user.email github-actions[bot]@users.noreply.github.com
             git add -A
             git commit -m "Update README - metrics"
+            git pull
             git push "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/heitorpolidoro/heitorpolidoro.git" HEAD:master
           else
             echo "Nothing to commit"

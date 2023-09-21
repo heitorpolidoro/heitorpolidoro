@@ -197,7 +197,7 @@ jobs:
           base: ""
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
-          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, editors-graphs, os, os-graphs
+          plugin_wakatime_sections: time, projects, projects-graphs, editors
           output_action: none
 
       - name: Upload svg

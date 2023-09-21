@@ -60,7 +60,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 <img src="metrics/metrics.followup.svg"><br>
 <img src="metrics/metrics.activity.svg"><br>
-<img src="metrics/metrics.wakatime.svg">
+<img src="metrics/metrics.wakatime.svg"><br>
+<img src="metrics/metrics.projects.svg"><br>
 </div>
 <!-- activity: starts -->
 <!-- activity: ends -->

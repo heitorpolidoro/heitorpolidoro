@@ -11,9 +11,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
       - name: Generating svg
         uses: lowlighter/metrics@latest
         with:
@@ -36,9 +33,6 @@ jobs:
     name: Metrics Achievements
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
       - name: Generating svg
         uses: lowlighter/metrics@latest
         with:
@@ -60,9 +54,6 @@ jobs:
     name: Metrics Followup
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
       - name: Generating svg
         uses: lowlighter/metrics@latest
         with:
@@ -85,9 +76,6 @@ jobs:
     name: Metrics Languages
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
       - name: Generating svg
         uses: lowlighter/metrics@latest
         with:
@@ -111,9 +99,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
       - name: Generating svg
         uses: lowlighter/metrics@latest
         with:
@@ -135,9 +120,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
       - name: Generating svg
         uses: lowlighter/metrics@latest
         with:
@@ -160,9 +142,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
       - name: Generating svg
         uses: lowlighter/metrics@latest
         with:

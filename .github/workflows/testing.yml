@@ -17,7 +17,8 @@ jobs:
         with:
           filename: metrics.testing.svg
           token: ${{ secrets.HEITORPOLIDORO_PAT }}
-          base_indepth: yes
+          base: ""
+          plugin_sponsors: yes
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
           output_action: none

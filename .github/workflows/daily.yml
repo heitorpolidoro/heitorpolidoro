@@ -7,10 +7,8 @@ on:
     - cron: '0 0 * * *'
 
 jobs:
-  build:
+  overall:
     runs-on: ubuntu-latest
-    permissions:
-        contents: write
 
     steps:
       - name: Checkout
@@ -26,6 +24,22 @@ jobs:
           base: header, activity, community, repositories, metadata
           output_action: none
 
+      - name: Upload svg
+        uses: actions/upload-artifact@v3
+        with:
+          name: overall
+          path: metrics.overall.svg
+          retention-days: 1
+
+  achievements:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
       - name: Metrics Achievements
         uses: lowlighter/metrics@latest
         with:
@@ -34,6 +48,22 @@ jobs:
           base: ""
           plugin_achievements: yes
           output_action: none
+
+      - name: Upload svg
+        uses: actions/upload-artifact@v3
+        with:
+          name: achievements
+          path: metrics.achievements.svg
+          retention-days: 1
+
+  followup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
       - name: Metrics Followup
         uses: lowlighter/metrics@latest
@@ -44,10 +74,34 @@ jobs:
           plugin_followup: yes
           plugin_followup_indepth: yes
 
+      - name: Upload svg
+        uses: actions/upload-artifact@v3
+        with:
+          name: followup
+          path: metrics.followup.svg
+          retention-days: 1
+
+  update:
+    runs-on: ubuntu-latest
+    needs:
+      - overall
+      - achievements
+      - followup
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Download Artefacts
+        uses: actions/download-artifact@v3
+
       - name: Update images
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          ls
           if [[ "$(git status --porcelain)" != "" ]]; then
             set -x
             git config http.sslVerify false

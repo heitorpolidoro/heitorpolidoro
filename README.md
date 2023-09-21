@@ -65,6 +65,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 
 ### Languages and Tools:
 </summary>
+<img src="metrics/metrics.languages.svg">
 
 <!-- Tools -->
 [![Linux](https://skillicons.dev/icons?i=linux&theme=dark)](https://www.linux.org/)

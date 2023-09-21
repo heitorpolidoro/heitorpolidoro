@@ -55,6 +55,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 </div>
 <!-- activity: starts -->
 <!-- activity: ends -->
+
 ### Languages and Tools:
 
 <!-- Tools -->

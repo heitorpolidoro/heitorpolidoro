@@ -79,7 +79,6 @@ jobs:
           path: /metrics_renders/metrics.followup.svg
           retention-days: 1
 
-
   languages:
     runs-on: ubuntu-latest
     name: Metrics Languages
@@ -106,12 +105,38 @@ jobs:
           path: /metrics_renders/metrics.languages.svg
           retention-days: 1
 
+  sponsor:
+    name: Metrics Sponsor
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generating svg
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.sponsor.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: ""
+          plugin_sponsors: yes
+          output_action: none
+
+      - name: Upload svg
+        uses: actions/upload-artifact@v3
+        with:
+          name: metrics
+          path: /metrics_renders/metrics.sponsor.svg
+          retention-days: 1
+
   update:
     runs-on: ubuntu-latest
     needs:
       - overall
       - achievements
       - followup
+      - language
+      - sponsor
 
     steps:
       - name: Checkout

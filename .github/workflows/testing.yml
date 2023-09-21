@@ -18,9 +18,8 @@ jobs:
           filename: metrics.testing.svg
           token: ${{ secrets.HEITORPOLIDORO_PAT }}
           base: ""
-          plugin_sponsors: yes
-          repositories_forks: yes
-          repositories_affiliations: owner, collaborator, organization_member
+          plugin_leetcode: yes
+          plugin_leetcode_sections: solved, skills, recent
           output_action: none
 
       - name: Upload svg

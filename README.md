@@ -65,7 +65,6 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 
 ### Languages and Tools:
 </summary>
-<img src="metrics/metrics.languages.svg">
 
 <!-- Tools -->
 [![Linux](https://skillicons.dev/icons?i=linux&theme=dark)](https://www.linux.org/)
@@ -107,8 +106,16 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 
 ![Heitor Polidoro's GitHub stats](https://github-readme-stats.vercel.app/api/?username=heitorpolidoro&show_icons=true&theme=dark&show=reviews,prs_merged,prs_merged_percentage&rank_icon=github&card_width=500px&hide_border=true)<br>
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=heitorpolidoro&theme=dark&date_format=M%20j%5B%2C%20Y%5D&card_width=500px&hide_border=true)](https://git.io/streak-stats)<br>
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=heitorpolidoro&theme=dark&layout=compact&card_width=500px&hide_border=true)
+<img src="metrics/metrics.languages.svg">
 </div>
+
+---
+<div align="center">
+<img src="metrics/metrics.testing.svg">
+</div>
+
+---
+
 <details>
 <summary>
 
@@ -158,6 +165,7 @@ Tools that I use to build this README:
 - [Github Readme Streak Stats](https://github.com/DenverCoder1/github-readme-streak-stats)
 - [Github Readme Activity Graph](https://github.com/Ashutosh00710/github-readme-activity-graph)
 - [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy)
+- [Metrics](https://github.com/lowlighter/metrics)
 
 
 <div align="center">

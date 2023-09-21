@@ -43,6 +43,7 @@ jobs:
           plugin_activity: yes
           plugin_activity_limit: 10
           plugin_activity_days: 0
+          plugin_activity_skipped: heitorpolidoro
 
       - name: Metrics Languages
         uses: lowlighter/metrics@latest

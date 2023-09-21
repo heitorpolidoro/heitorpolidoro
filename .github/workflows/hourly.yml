@@ -50,8 +50,7 @@ jobs:
           base: ""
           plugin_languages: yes
           plugin_languages_indepth: yes
-#          plugin_languages_details:
-          commits_authoring: firstname lastname, username, username@users.noreply.github.com
+          plugin_languages_details: bytes-size, percentage, lines
           output_action: none
 
       - name: Upload svg

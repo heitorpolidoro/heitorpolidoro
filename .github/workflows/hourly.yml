@@ -18,7 +18,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.activity.svg
-          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
           plugin_activity: yes
           plugin_activity_limit: 10

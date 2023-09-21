@@ -48,23 +48,14 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 
 ---
 <!-- Activities -->
-<details>
-<summary>
-
 ### Recent Activities:
-</summary>
 <div align="center">
 <img src="metrics/metrics.followup.svg"><br>
 <img src="metrics/metrics.activity.svg">
 </div>
 <!-- activity: starts -->
 <!-- activity: ends -->
-</details>
-<details>
-<summary>
-
 ### Languages and Tools:
-</summary>
 
 <!-- Tools -->
 [![Linux](https://skillicons.dev/icons?i=linux&theme=dark)](https://www.linux.org/)
@@ -97,7 +88,6 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 [![Mongo DB](https://skillicons.dev/icons?i=mongo)](https://www.mongodb.com/)
 [![Redis](https://skillicons.dev/icons?i=redis)](https://redis.io)
 [![SQLite](https://skillicons.dev/icons?i=sqlite)](https://www.sqlite.org/)
-</details>
 
 ---
 <div align="center">

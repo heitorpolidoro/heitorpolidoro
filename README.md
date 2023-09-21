@@ -110,11 +110,12 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 </div>
 
 ---
+<!--
 <div align="center">
 <img src="metrics/metrics.testing.svg">
 </div>
-
 ---
+-->
 
 <details>
 <summary>

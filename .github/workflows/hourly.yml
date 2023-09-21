@@ -1,7 +1,7 @@
 name: Update README Hourly
 
 on:
-  push:
+#  push:
   workflow_dispatch:
   schedule:
     - cron: '0 * * * *'

@@ -8,13 +8,14 @@ on:
 
 jobs:
   overall:
+    name: Metrics Overall
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Metrics Overall
+      - name: Generating svg
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.overall.svg
@@ -31,12 +32,13 @@ jobs:
 
   achievements:
     runs-on: ubuntu-latest
+    name: Metrics Achievements
 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Metrics Achievements
+      - name: Generating svg
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.achievements.svg

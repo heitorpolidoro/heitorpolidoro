@@ -61,9 +61,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     needs:
-      - overall
-      - achievements
-      - followup
+      - activity
+      - languages
 
     steps:
       - name: Checkout

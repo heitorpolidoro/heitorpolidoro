@@ -194,6 +194,7 @@ jobs:
       - sponsor
       - leetcode
       - stackoverflow
+      - activity
 
     steps:
       - name: Checkout

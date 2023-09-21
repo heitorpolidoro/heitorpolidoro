@@ -129,6 +129,31 @@ jobs:
           path: /metrics_renders/metrics.sponsor.svg
           retention-days: 1
 
+  leetcode:
+    name: Metrics Leetcode
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generating svg
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.leetcode.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: ""
+          plugin_leetcode: yes
+          plugin_leetcode_sections: solved, skills, recent
+          output_action: none
+
+      - name: Upload svg
+        uses: actions/upload-artifact@v3
+        with:
+          name: metrics
+          path: /metrics_renders/metrics.leetcode.svg
+          retention-days: 1
+
   update:
     runs-on: ubuntu-latest
     needs:
@@ -137,6 +162,7 @@ jobs:
       - followup
       - language
       - sponsor
+      - leetcode
 
     steps:
       - name: Checkout

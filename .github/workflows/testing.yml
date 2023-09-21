@@ -18,8 +18,9 @@ jobs:
           filename: metrics.testing.svg
           token: ${{ secrets.HEITORPOLIDORO_PAT }}
           base: ""
-          plugin_leetcode: yes
-          plugin_leetcode_sections: solved, skills, recent
+          plugin_stackoverflow: yes
+          plugin_stackoverflow_user: 16155315
+          plugin_stackoverflow_sections: answers-top, answers-recent, questions-top, questions-recent
           output_action: none
 
       - name: Upload svg

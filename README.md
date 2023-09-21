@@ -127,6 +127,17 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 
 
 ---
+<details>
+<summary>
+
+### Scores
+</summary>
+
+<img src="metrics/metrics.leetcode.svg">
+</details>
+
+
+---
 <h3 align="left">My GitHub Actions:</h3>
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=autocreate-pr&theme=dark)](https://github.com/heitorpolidoro/autocreate-pr)

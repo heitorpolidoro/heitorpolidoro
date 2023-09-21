@@ -186,7 +186,7 @@ jobs:
       - overall
       - achievements
       - followup
-      - language
+      - languages
       - sponsor
       - leetcode
       - stackoverflow

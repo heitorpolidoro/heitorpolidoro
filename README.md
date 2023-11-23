@@ -39,7 +39,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-![Autocreate-Pr](https://img.shields.io/badge/autocreate--pr-Automatically_create_a_Pull_Request_and_can_set_to_auto--merge-lightgreen) 
+![Auto-Release](https://img.shields.io/badge/auto--release-Action_to_create_a_release_automatically-lightgreen) 
 </div>
 
 <!-- working_on: ends -->

@@ -184,28 +184,28 @@ jobs:
           path: /metrics_renders/metrics.stackoverflow.svg
           retention-days: 1
 
-  wakatime:
-    name: Metrics WakaTime
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Generating svg
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.wakatime.svg
-          token: ${{ secrets.HEITORPOLIDORO_PAT }}
-          base: ""
-          plugin_wakatime: yes
-          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
-          plugin_wakatime_sections: time, projects, projects-graphs, editors
-          output_action: none
-
-      - name: Upload svg
-        uses: actions/upload-artifact@v3
-        with:
-          name: metrics
-          path: /metrics_renders/metrics.wakatime.svg
-          retention-days: 1
+#  wakatime:
+#    name: Metrics WakaTime
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - name: Generating svg
+#        uses: lowlighter/metrics@latest
+#        with:
+#          filename: metrics.wakatime.svg
+#          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+#          base: ""
+#          plugin_wakatime: yes
+#          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+#          plugin_wakatime_sections: time, projects, projects-graphs, editors
+#          output_action: none
+#
+#      - name: Upload svg
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: metrics
+#          path: /metrics_renders/metrics.wakatime.svg
+#          retention-days: 1
 
   projects:
     name: Metrics Projects

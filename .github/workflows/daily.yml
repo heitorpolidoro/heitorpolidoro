@@ -240,7 +240,7 @@ jobs:
       - leetcode
       - stackoverflow
       - activity
-      - wakatime
+#      - wakatime
       - projects
 
     steps:

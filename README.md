@@ -39,7 +39,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-![Auto-Release](https://img.shields.io/badge/auto--release-Action_to_create_a_release_automatically-lightgreen) 
+![.Github](https://img.shields.io/badge/.github-No_description-lightgreen) 
 </div>
 
 <!-- working_on: ends -->

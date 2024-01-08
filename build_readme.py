@@ -49,7 +49,7 @@ $projects
 </div>
 """
     projects = [
-        f"![{repo.name.title()}](https://img.shields.io/badge/{_scape(repo.name)}-{_scape(repo.description or 'No description')}-lightgreen)"
+        f"[![{repo.name.title()}](https://img.shields.io/badge/{_scape(repo.name)}-{_scape(repo.description or 'No description')}-lightgreen)]({repo.full_name})"
         for repo in repos]
     return Template(current_working_on_template).safe_substitute(projects="<br>\n".join(projects))
 

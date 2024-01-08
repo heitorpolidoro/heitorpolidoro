@@ -59,18 +59,6 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <img src="metrics/metrics.languages.svg">
 </div>
 
----
-<!-- Activities -->
-<div align="center">
-<img src="metrics/metrics.followup.svg"><br>
-<img src="metrics/metrics.activity.svg"><br>
-
-[//]: # (<img src="metrics/metrics.wakatime.svg"><br>)
-<img src="metrics/metrics.projects.svg"><br>
-</div>
-<!-- activity: starts -->
-<!-- activity: ends -->
-
 ### Languages and Tools:
 
 <!-- Tools -->
@@ -106,12 +94,19 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 [![SQLite](https://skillicons.dev/icons?i=sqlite)](https://www.sqlite.org/)
 
 ---
-<!--
+
+<details>
+<summary>
+
+### Activities
+</summary>
 <div align="center">
-<img src="metrics/metrics.testing.svg">
+<img src="metrics/metrics.followup.svg"><br>
+<img src="metrics/metrics.activity.svg"><br>
+<!-- <img src="metrics/metrics.wakatime.svg"><br> -->
+<!-- <img src="metrics/metrics.projects.svg"><br> -->
 </div>
----
--->
+</details>
 
 <details>
 <summary>
@@ -123,7 +118,6 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 </details>
 
 
----
 <details>
 <summary>
 

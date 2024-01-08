@@ -207,27 +207,27 @@ jobs:
 #          path: /metrics_renders/metrics.wakatime.svg
 #          retention-days: 1
 
-  projects:
-    name: Metrics Projects
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Generating svg
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.projects.svg
-          token: ${{ secrets.HEITORPOLIDORO_PAT }}
-          base: ""
-          plugin_projects: yes
-          plugin_projects_descriptions: yes
-          output_action: none
-
-      - name: Upload svg
-        uses: actions/upload-artifact@v3
-        with:
-          name: metrics
-          path: /metrics_renders/metrics.projects.svg
-          retention-days: 1
+#  projects:
+#    name: Metrics Projects
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - name: Generating svg
+#        uses: lowlighter/metrics@latest
+#        with:
+#          filename: metrics.projects.svg
+#          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+#          base: ""
+#          plugin_projects: yes
+#          plugin_projects_descriptions: yes
+#          output_action: none
+#
+#      - name: Upload svg
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: metrics
+#          path: /metrics_renders/metrics.projects.svg
+#          retention-days: 1
 
   update:
     runs-on: ubuntu-latest
@@ -241,7 +241,7 @@ jobs:
       - stackoverflow
       - activity
 #      - wakatime
-      - projects
+#      - projects
 
     steps:
       - name: Checkout

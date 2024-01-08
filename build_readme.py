@@ -21,12 +21,21 @@ def replace_section(readme_content, section, content):
 
 
 def get_last_working_repositories(last=1, days=30):
-    repos = list(user.get_repos())
-    return [r for r in repos[:last] if
-            r.pushed_at.date() > now - datetime.timedelta(days=days) and r.name != "heitorpolidoro"]
+    repos = list(user.get_repos(sort="pushed"))
+    resp = []
+    for repo in repos:
+        if repo.name == "heitorpolidoro":
+            continue
+        if repo.pushed_at.date() <= now - datetime.timedelta(days=days):
+            continue
+        resp.append(repo)
+        if len(resp) >= last:
+            break
+
+    return resp
 
 
-def build_working_on_section(last=1, days=30):
+def build_working_on_section(last=5, days=30):
     def _scape(text):
         return text.replace("_", "__").replace("-", "--").replace(" ", "_")
 

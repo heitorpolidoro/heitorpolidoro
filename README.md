@@ -39,7 +39,11 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-![.Github](https://img.shields.io/badge/.github-No_description-lightgreen) 
+![Issue-Supervisor](https://img.shields.io/badge/issue--supervisor-An_App_to_synchronize_issues_between_repositories-lightgreen)<br>
+![.Github](https://img.shields.io/badge/.github-No_description-lightgreen)<br>
+![Github-App-Handler](https://img.shields.io/badge/github--app--handler-A_handler_helper_to_create_Github_App_easily-lightgreen)<br>
+![Auto-Release-Generator](https://img.shields.io/badge/auto--release--generator-No_description-lightgreen)<br>
+![Polidoro-Pygithub](https://img.shields.io/badge/Polidoro--PyGithub-Typed_interactions_with_the_GitHub_API_v3-lightgreen) 
 </div>
 
 <!-- working_on: ends -->

@@ -39,8 +39,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
+[![Pull-Request-Generator](https://img.shields.io/badge/pull--request--generator-An_App_to_help_creating_Pull_Requests-lightgreen)](https://github.com/heitorpolidoro/pull-request-generator)<br>
 [![Issue-Supervisor](https://img.shields.io/badge/issue--supervisor-An_App_to_synchronize_issues_between_repositories-lightgreen)](https://github.com/heitorpolidoro/issue-supervisor)<br>
-[![Bartholomew-Smith](https://img.shields.io/badge/bartholomew--smith-No_description-lightgreen)](https://github.com/heitorpolidoro/bartholomew-smith)<br>
 [![Self-Approver](https://img.shields.io/badge/self--approver-No_description-lightgreen)](https://github.com/heitorpolidoro/self-approver)<br>
 [![Github-App-Handler](https://img.shields.io/badge/github--app--handler-A_handler_helper_to_create_Github_App_easily-lightgreen)](https://github.com/heitorpolidoro/github-app-handler)<br>
 [![Auto-Release-Generator](https://img.shields.io/badge/auto--release--generator-No_description-lightgreen)](https://github.com/heitorpolidoro/auto-release-generator) 

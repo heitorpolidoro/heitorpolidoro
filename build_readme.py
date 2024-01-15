@@ -45,7 +45,7 @@ def get_last_working_repositories(last=1, days=30):
     return resp
 
 
-def build_working_on_section(last=5, days=30):
+def build_working_on_section(last=2, days=30):
     def _scape(text):
         return text.replace("_", "__").replace("-", "--").replace(" ", "_")
 

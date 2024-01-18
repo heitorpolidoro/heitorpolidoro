@@ -40,7 +40,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 
 ### 🔭 I’m currently working on:
 [![Bartholomew-Smith](https://img.shields.io/badge/bartholomew--smith-No_description-lightgreen)](https://github.com/heitorpolidoro/bartholomew-smith)<br>
-[![Pull-Request-Generator](https://img.shields.io/badge/pull--request--generator-An_App_to_help_creating_Pull_Requests-lightgreen)](https://github.com/heitorpolidoro/pull-request-generator) 
+[![Github-App-Handler](https://img.shields.io/badge/github--app--handler-A_handler_helper_to_create_Github_App_easily-lightgreen)](https://github.com/heitorpolidoro/github-app-handler) 
 </div>
 
 <!-- working_on: ends -->

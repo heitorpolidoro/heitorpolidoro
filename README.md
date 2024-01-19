@@ -127,9 +127,10 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 
 
 ---
-<h3 align="left">My GitHub Actions:</h3>
+<h3 align="left">Featured:</h3>
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=autocreate-pr&theme=dark)](https://github.com/heitorpolidoro/autocreate-pr)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=github-app-handler&theme=dark)](https://github.com/heitorpolidoro/github-app-handler)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=bartholomew-smith&theme=dark)](https://github.com/heitorpolidoro/bartholomew-smith)
 
 ---
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=heitorpolidoro&theme=github-compact&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)

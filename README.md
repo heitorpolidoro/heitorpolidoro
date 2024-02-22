@@ -39,8 +39,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-[![Pull-Request-Generator](https://img.shields.io/badge/pull--request--generator-An_App_to_help_creating_Pull_Requests-lightgreen)](https://github.com/heitorpolidoro/pull-request-generator)<br>
-[![Self-Approver](https://img.shields.io/badge/self--approver-No_description-lightgreen)](https://github.com/heitorpolidoro/self-approver) 
+[![Polidoro-Pygithub](https://img.shields.io/badge/Polidoro--PyGithub-Typed_interactions_with_the_GitHub_API_v3-lightgreen)](https://github.com/heitorpolidoro/Polidoro-PyGithub)<br>
+[![Issue-Supervisor](https://img.shields.io/badge/issue--supervisor-An_App_to_synchronize_issues_between_repositories-lightgreen)](https://github.com/heitorpolidoro/issue-supervisor) 
 </div>
 
 <!-- working_on: ends -->

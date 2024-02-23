@@ -39,8 +39,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-[![Polidoro-Pygithub](https://img.shields.io/badge/Polidoro--PyGithub-Typed_interactions_with_the_GitHub_API_v3-lightgreen)](https://github.com/heitorpolidoro/Polidoro-PyGithub)<br>
-[![Issue-Supervisor](https://img.shields.io/badge/issue--supervisor-An_App_to_synchronize_issues_between_repositories-lightgreen)](https://github.com/heitorpolidoro/issue-supervisor) 
+[![Bartholomew-Smith](https://img.shields.io/badge/bartholomew--smith-Your_butler_for_managing_your_GitHub_repositories-lightgreen)](https://github.com/heitorpolidoro/bartholomew-smith)<br>
+[![Polidoro-Pygithub](https://img.shields.io/badge/Polidoro--PyGithub-Typed_interactions_with_the_GitHub_API_v3-lightgreen)](https://github.com/heitorpolidoro/Polidoro-PyGithub) 
 </div>
 
 <!-- working_on: ends -->

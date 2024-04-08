@@ -38,30 +38,25 @@ DEEPSOURCE_BADGE_TEMPLATE = "[![DeepSource](https://app.deepsource.com/gh/$repos
 VERCEL_BADGE_TEMPLATE = "![Vercel](https://vercelbadge.vercel.app/api/$repository)"
 
 PYPI_BADGE_TEMPLATE = (
-    "![PyPI](https://img.shields.io/pypi/v/$package?label=pypi%20package)"
+    "![PyPI](https://img.shields.io/pypi/v/$package?label=PyPi%20package)"
 )
 
 CHECKLY_BADGE_TEMPLATE = "![](https://api.checklyhq.com/v1/badges/checks/$checkly_id?style=flat&theme=default)"
 
-PYPI_PROJECTS = ["github-app-handler"]
-VERCEL_PROJECTS = ["bartholomew-smith"]
-CHECKLY_PROJECTS = {"bartholomew-smith": "b7690d9e-b7e7-4637-b601-c6611d06b848"}
-
 GITHUB_ACTIONS = {
-    "github-app-handler": {
-        "Code Quality": "code_quality.yml",
-        "PyPi Package": "pypi-publish.yml",
-    },
-    "bartholomew-smith": {
-        "Code Quality": "code_quality.yml",
-        "CodeQL": "github-code-scanning/codeql",
-    },
+    "Code Quality": "code_quality.yml",
+    "CodeQL": "github-code-scanning/codeql",
+    "PyPi Package": "pypi-publish.yml",
 }
 
 PROJECTS = {
     "Github App Handler": "github-app-handler",
     "Bartholomew Smith": "bartholomew-smith",
 }
+
+PYPI_PROJECTS = ["github-app-handler"]
+VERCEL_PROJECTS = ["bartholomew-smith"]
+CHECKLY_PROJECTS = {"bartholomew-smith": "b7690d9e-b7e7-4637-b601-c6611d06b848"}
 
 
 def fix_repository(repository: str) -> str:
@@ -71,13 +66,14 @@ def fix_repository(repository: str) -> str:
 
 
 def generate_badge(template: str, **values: str) -> str:
-    template = Template(template)
-    return template.safe_substitute(**values)
+    return Template(template).safe_substitute(**values)
 
 
 def generate_github_actions_badges(repository: str) -> str:
     badges = []
-    for name, file in GITHUB_ACTIONS.get(repository, {}).items():
+    for name, file in GITHUB_ACTIONS.items():
+        if name == "PyPi Package" and repository not in PYPI_PROJECTS:
+            continue
         badges.append(
             generate_badge(
                 GITHUB_ACTION_BADGE_TEMPLATE,

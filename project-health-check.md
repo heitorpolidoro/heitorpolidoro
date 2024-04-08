@@ -1,7 +1,7 @@
-2024-04-08 16:20:23.644979
 ## Github App Handler
 
 [![Code Quality](https://github.com/heitorpolidoro/github-app-handler/actions/workflows/code_quality.yml/badge.svg)](https://github.com/heitorpolidoro/github-app-handler/actions/workflows/code_quality.yml)
+[![CodeQL](https://github.com/heitorpolidoro/github-app-handler/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/heitorpolidoro/github-app-handler/actions/workflows/github-code-scanning/codeql)
 [![PyPi Package](https://github.com/heitorpolidoro/github-app-handler/actions/workflows/pypi-publish.yml/badge.svg)](https://github.com/heitorpolidoro/github-app-handler/actions/workflows/pypi-publish.yml)
 <br>
 [![Latest Version](https://img.shields.io/github/v/release/heitorpolidoro/github-app-handler?label=Latest%20Version)](https://github.com/heitorpolidoro/github-app-handler/releases/latest)
@@ -28,7 +28,7 @@
 <br>
 [![DeepSource](https://app.deepsource.com/gh/heitorpolidoro/github-app-handler.svg/?label=active+issues&show_trend=true&token=hZuHoQ-gd4kIPgNuSX0X_QT2)](https://app.deepsource.com/gh/heitorpolidoro/github-app-handler/)
 <br>
-![PyPI](https://img.shields.io/pypi/v/github-app-handler?label=pypi%20package)
+![PyPI](https://img.shields.io/pypi/v/github-app-handler?label=PyPi%20package)
 ## Bartholomew Smith
 
 [![Code Quality](https://github.com/heitorpolidoro/bartholomew-smith/actions/workflows/code_quality.yml/badge.svg)](https://github.com/heitorpolidoro/bartholomew-smith/actions/workflows/code_quality.yml)

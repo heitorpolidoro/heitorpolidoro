@@ -39,7 +39,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-[![Tests](https://img.shields.io/badge/tests-No_description-lightgreen)](https://github.com/heitorpolidoro/tests) 
+ 
 </div>
 
 <!-- working_on: ends -->

@@ -121,7 +121,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 </summary>
 
 [![LeetCode](metrics/metrics.leetcode.svg)](https://leetcode.com/u/heitorpolidoro/)
-<img src="metrics/metrics.stackoverflow.svg">
+[![Stack Overflow](metrics/metrics.stackoverflow.svg)](https://stackoverflow.com/users/16155315/heitor-polidoro?tab=profile)
 </details>
 
 

@@ -120,7 +120,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 ### Scores
 </summary>
 
-<img src="metrics/metrics.leetcode.svg">
+[![LeetCode](metrics/metrics.leetcode.svg)](https://leetcode.com/u/heitorpolidoro/)
 <img src="metrics/metrics.stackoverflow.svg">
 </details>
 

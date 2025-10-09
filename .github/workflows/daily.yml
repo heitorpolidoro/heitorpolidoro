@@ -24,7 +24,7 @@ jobs:
           output_action: none
 
       - name: Upload svg
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: metrics
           path: /metrics_renders/metrics.activity.svg
@@ -46,7 +46,7 @@ jobs:
           output_action: none
 
       - name: Upload svg
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: metrics
           path: /metrics_renders/metrics.overall.svg
@@ -67,7 +67,7 @@ jobs:
           output_action: none
 
       - name: Upload svg
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: metrics
           path: /metrics_renders/metrics.achievements.svg
@@ -89,7 +89,7 @@ jobs:
           output_action: none
 
       - name: Upload svg
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: metrics
           path: /metrics_renders/metrics.followup.svg
@@ -112,7 +112,7 @@ jobs:
           output_action: none
 
       - name: Upload svg
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: metrics
           path: /metrics_renders/metrics.languages.svg
@@ -133,7 +133,7 @@ jobs:
           output_action: none
 
       - name: Upload svg
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: metrics
           path: /metrics_renders/metrics.sponsor.svg
@@ -155,7 +155,7 @@ jobs:
           output_action: none
 
       - name: Upload svg
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: metrics
           path: /metrics_renders/metrics.leetcode.svg
@@ -178,7 +178,7 @@ jobs:
           output_action: none
 
       - name: Upload svg
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: metrics
           path: /metrics_renders/metrics.stackoverflow.svg
@@ -201,7 +201,7 @@ jobs:
 #          output_action: none
 #
 #      - name: Upload svg
-#        uses: actions/upload-artifact@v3
+#        uses: actions/upload-artifact@v4
 #        with:
 #          name: metrics
 #          path: /metrics_renders/metrics.wakatime.svg
@@ -223,7 +223,7 @@ jobs:
 #          output_action: none
 #
 #      - name: Upload svg
-#        uses: actions/upload-artifact@v3
+#        uses: actions/upload-artifact@v4
 #        with:
 #          name: metrics
 #          path: /metrics_renders/metrics.projects.svg
@@ -245,12 +245,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
         with:
           persist-credentials: false
 
       - name: Download Artefacts
-        uses: actions/download-artifact@v4.1.7
+        uses: actions/download-artifact@v5
 
       - name: Set up Python 3.11
         id: cache_pip

@@ -26,7 +26,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
-          name: metrics/metrics.activity
+          name: metrics.activity.svg
           path: /metrics_renders/metrics.activity.svg
           retention-days: 1
 
@@ -48,7 +48,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
-          name: metrics/metrics.overall
+          name: metrics.overall.svg
           path: /metrics_renders/metrics.overall.svg
           retention-days: 1
 
@@ -69,7 +69,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
-          name: metrics/metrics.achievements
+          name: metrics.achievements.svg
           path: /metrics_renders/metrics.achievements.svg
           retention-days: 1
 
@@ -91,7 +91,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
-          name: metrics/metrics.followup
+          name: metrics.followup.svg
           path: /metrics_renders/metrics.followup.svg
           retention-days: 1
 
@@ -114,7 +114,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
-          name: metrics/metrics.languages
+          name: metrics.languages.svg
           path: /metrics_renders/metrics.languages.svg
           retention-days: 1
 
@@ -135,7 +135,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
-          name: metrics/metrics.sponsor
+          name: metrics.sponsor.svg
           path: /metrics_renders/metrics.sponsor.svg
           retention-days: 1
 
@@ -157,7 +157,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
-          name: metrics/metrics.leetcode
+          name: metrics.leetcode.svg
           path: /metrics_renders/metrics.leetcode.svg
           retention-days: 1
 
@@ -180,7 +180,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
-          name: metrics/metrics.stackoverflow
+          name: metrics.stackoverflow.svg
           path: /metrics_renders/metrics.stackoverflow.svg
           retention-days: 1
 
@@ -251,6 +251,8 @@ jobs:
 
       - name: Download Artefacts
         uses: actions/download-artifact@v5
+        with:
+          path: ./metrics
 
       - name: Set up Python 3.11
         id: cache_pip

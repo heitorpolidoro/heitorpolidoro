@@ -26,6 +26,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
+          name: metrics.activity
           path: /metrics_renders/metrics.activity.svg
           retention-days: 1
 
@@ -47,6 +48,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
+          name: metrics.overall
           path: /metrics_renders/metrics.overall.svg
           retention-days: 1
 
@@ -67,6 +69,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
+          name: metrics.achievements
           path: /metrics_renders/metrics.achievements.svg
           retention-days: 1
 
@@ -88,6 +91,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
+          name: metrics.followup
           path: /metrics_renders/metrics.followup.svg
           retention-days: 1
 
@@ -110,6 +114,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
+          name: metrics.languages
           path: /metrics_renders/metrics.languages.svg
           retention-days: 1
 
@@ -130,6 +135,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
+          name: metrics.sponsor
           path: /metrics_renders/metrics.sponsor.svg
           retention-days: 1
 
@@ -151,6 +157,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
+          name: metrics.leetcode
           path: /metrics_renders/metrics.leetcode.svg
           retention-days: 1
 
@@ -173,6 +180,7 @@ jobs:
       - name: Upload svg
         uses: actions/upload-artifact@v4
         with:
+          name: metrics.stackoverflow
           path: /metrics_renders/metrics.stackoverflow.svg
           retention-days: 1
 

@@ -36,7 +36,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-[![Cash_Lens](https://img.shields.io/badge/cash__lens-No_description-lightgreen)](https://github.com/heitorpolidoro/cash_lens) 
+ 
 </div>
 
 <!-- working_on: ends -->

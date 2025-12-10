@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: metrics.activity.svg
-          path: /metrics_renders/metrics.activity.svg
+          path: metrics.activity.svg
           retention-days: 1
 
   overall:
@@ -49,7 +49,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: metrics.overall.svg
-          path: /metrics_renders/metrics.overall.svg
+          path: metrics.overall.svg
           retention-days: 1
 
   achievements:
@@ -70,7 +70,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: metrics.achievements.svg
-          path: /metrics_renders/metrics.achievements.svg
+          path: metrics.achievements.svg
           retention-days: 1
 
   followup:
@@ -92,7 +92,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: metrics.followup.svg
-          path: /metrics_renders/metrics.followup.svg
+          path: metrics.followup.svg
           retention-days: 1
 
   languages:
@@ -115,7 +115,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: metrics.languages.svg
-          path: /metrics_renders/metrics.languages.svg
+          path: metrics.languages.svg
           retention-days: 1
 
   sponsor:
@@ -136,7 +136,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: metrics.sponsor.svg
-          path: /metrics_renders/metrics.sponsor.svg
+          path: metrics.sponsor.svg
           retention-days: 1
 
   leetcode:
@@ -158,7 +158,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: metrics.leetcode.svg
-          path: /metrics_renders/metrics.leetcode.svg
+          path: metrics.leetcode.svg
           retention-days: 1
 
   stackoverflow:
@@ -181,7 +181,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: metrics.stackoverflow.svg
-          path: /metrics_renders/metrics.stackoverflow.svg
+          path: metrics.stackoverflow.svg
           retention-days: 1
 
 #  wakatime:
@@ -204,7 +204,7 @@ jobs:
 #        uses: actions/upload-artifact@v4
 #        with:
 #          name: metrics
-#          path: /metrics_renders/metrics.wakatime.svg
+#          path: /metrics/metrics.wakatime.svg
 #          retention-days: 1
 
 #  projects:
@@ -226,7 +226,7 @@ jobs:
 #        uses: actions/upload-artifact@v4
 #        with:
 #          name: metrics
-#          path: /metrics_renders/metrics.projects.svg
+#          path: /metrics/metrics.projects.svg
 #          retention-days: 1
 
   update:
@@ -281,7 +281,7 @@ jobs:
             git config user.email github-actions[bot]@users.noreply.github.com
             git add -A
             git commit -m "Update README - metrics"
-            git pull
+            git pull --rebase
             git push "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/heitorpolidoro/heitorpolidoro.git" HEAD:master
           else
             echo "Nothing to commit"

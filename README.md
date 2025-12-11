@@ -116,9 +116,9 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 </summary>
 
 [![LeetCode](metrics/metrics.leetcode.svg)](https://leetcode.com/u/heitorpolidoro/)
-<!-- [![Stack Overflow](metrics/metrics.stackoverflow.svg)](https://stackoverflow.com/users/16155315/heitor-polidoro?tab=profile) --?
-</details>
+<!-- [![Stack Overflow](metrics/metrics.stackoverflow.svg)](https://stackoverflow.com/users/16155315/heitor-polidoro?tab=profile) -->
 
+</details>
 
 ---
 <h3 align="left">Featured:</h3>
@@ -153,7 +153,6 @@ Tools that I use to build this README:
 - [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy)
 - [Metrics](https://github.com/lowlighter/metrics)
 
-
 <div align="center">
 
   ![GitHub Sponsors](https://img.shields.io/github/sponsors/heitorpolidoro)
@@ -161,7 +160,9 @@ Tools that I use to build this README:
   ![GitHub User's stars](https://img.shields.io/github/stars/heitorpolidoro)
   <br>
   <a href="https://github.com/heitorpolidoro?tab=followers" target="_blank"><img alt="Updates" src="https://img.shields.io/badge/--000000?style=flat-square&logo=RSS&logoColor=white"></a>
-  <a href="https://github.com/heitorpolidoro" target="_blank"><img alt="heitorpolidoro" src="https://badges.pufler.dev/visits/heitorpolidoro/heitorpolidoro?logo=GitHub&label=visits&color=success&logoColor=white&style=flat-square"/></a>
+<!--
+<a href="https://github.com/heitorpolidoro" target="_blank"><img alt="heitorpolidoro" src="https://badges.pufler.dev/visits/heitorpolidoro/heitorpolidoro?logo=GitHub&label=visits&color=success&logoColor=white&style=flat-square"/></a>
+-->
   <a href="https://github.com/heitorpolidoro" target="_blank"><img alt="profile hits" src="https://img.shields.io/jsdelivr/gh/hw/heitorpolidoro/heitorpolidoro?label=hits&style=flat-square"></a>
   <a href="https://github.com/heitorpolidoro/heitorpolidoro" target="_blank"><img alt="GitHub hits" src="https://img.shields.io/github/last-commit/heitorpolidoro/heitorpolidoro?label=profile%20updated&style=flat-square"></a>
 </div>

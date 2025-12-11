@@ -32,12 +32,16 @@ def replace_section(readme_content, section, content):
 def get_last_working_repositories(last=1, days=30):
     repos = list(user.get_repos(sort="pushed"))
     resp = []
-    for repo in repos:
+    for repo in user.get_repos(sort="pushed"):
+        print(repo.name, end=" - ")
         hide_repos = ["heitorpolidoro", ".github"]
         if repo.name in hide_repos:
+            print("skipping")
             continue
         if repo.pushed_at.date() <= now - datetime.timedelta(days=days):
+            print("not pushed in last", days, "days")
             continue
+        print("ok")
         resp.append(repo)
         if len(resp) >= last:
             break
@@ -71,6 +75,6 @@ if __name__ == "__main__":
     readme = root / "README.md"
     readme_content = readme.open().read()
     readme_content = replace_section(
-        readme_content, "working_on", build_working_on_section()
+        readme_content, "working_on", build_working_on_section(days=300)
     )
     readme.open("w").write(readme_content)

@@ -160,9 +160,6 @@ Tools that I use to build this README:
   ![GitHub User's stars](https://img.shields.io/github/stars/heitorpolidoro)
   <br>
   <a href="https://github.com/heitorpolidoro?tab=followers" target="_blank"><img alt="Updates" src="https://img.shields.io/badge/--000000?style=flat-square&logo=RSS&logoColor=white"></a>
-<!--
-<a href="https://github.com/heitorpolidoro" target="_blank"><img alt="heitorpolidoro" src="https://badges.pufler.dev/visits/heitorpolidoro/heitorpolidoro?logo=GitHub&label=visits&color=success&logoColor=white&style=flat-square"/></a>
--->
   <a href="https://github.com/heitorpolidoro" target="_blank"><img alt="profile hits" src="https://img.shields.io/jsdelivr/gh/hw/heitorpolidoro/heitorpolidoro?label=hits&style=flat-square"></a>
   <a href="https://github.com/heitorpolidoro/heitorpolidoro" target="_blank"><img alt="GitHub hits" src="https://img.shields.io/github/last-commit/heitorpolidoro/heitorpolidoro?label=profile%20updated&style=flat-square"></a>
 </div>

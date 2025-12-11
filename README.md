@@ -46,7 +46,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 <img src="metrics/metrics.overall.svg"><br>
-[![GitHub Streak](https://streak-stats.demolab.com?user=heitorpolidoro&theme=dark&hide_border=true&mode=weekly&card_width=500)](https://git.io/streak-stats)<br>
+<img src="metrics/metrics.streak.svg"><br>
 <img src="metrics/metrics.languages.svg">
 </div>
 

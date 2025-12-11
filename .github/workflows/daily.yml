@@ -174,7 +174,7 @@ jobs:
         run: |
           for i in {1..5}; do
             curl -s "https://streak-stats.demolab.com?user=heitorpolidoro&theme=dark&hide_border=true&mode=weekly&card_width=500" -o metrics/metrics.streak.svg
-            if grep -qi "error" streak.svg; then
+            if grep -qi "error" metrics/metrics.streak.svg; then
               echo "Attempt $i failed, waiting 10 seconds..."
               sleep 10
             else

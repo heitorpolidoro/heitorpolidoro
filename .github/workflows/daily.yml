@@ -172,9 +172,16 @@ jobs:
 
       - name: Github Streak
         run: |
-          curl -s "https://streak-stats.demolab.com?user=heitorpolidoro&theme=dark&hide_border=true&mode=weekly&card_width=500"
-          curl -s "https://streak-stats.demolab.com?user=heitorpolidoro&theme=dark&hide_border=true&mode=weekly&card_width=500" -o metrics.streak.svg
-
+          for i in {1..5}; do
+            curl -s "https://streak-stats.demolab.com?user=heitorpolidoro&theme=dark&hide_border=true&mode=weekly&card_width=500" -o metrics/metrics.streak.svg
+            if grep -qi "error" streak.svg; then
+              echo "Attempt $i failed, waiting 10 seconds..."
+              sleep 10
+            else
+              echo "Attempt $i succeeded!"
+              break
+            fi
+          done
 
       - name: Update info
         env:

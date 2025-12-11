@@ -4,9 +4,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
-  push:
-    branches:
-      - '**'
 
 jobs:
   activity:
@@ -14,213 +11,191 @@ jobs:
     name: Metrics Activity
 
     steps:
-    - uses: lowlighter/metrics@latest
-      env:
-        METRICS_USE_PREBUILT_IMAGE: true
-      with:
-#          base: header
-#          token: ${{ secrets.GITHUB_TOKEN }}
-#          plugin_isocalendar: yes
-#          plugin_languages: yes
-#          plugin_stars: yes
-#          config_order: base.header, isocalendar, languages, stars
-#      - name: Generating svg
-#        uses: lowlighter/metrics@latest
-#        with:
+      - name: Generating svg
+        uses: lowlighter/metrics@latest
+        with:
           filename: metrics/metrics.activity.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-#          base: ""
+          base: ""
           plugin_activity: yes
           plugin_activity_limit: 10
           plugin_activity_days: 0
+          plugin_activity_skipped: heitorpolidoro
 
+      - name: Upload svg
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics.activity.svg
+          path: metrics.activity.svg
+          retention-days: 1
+
+  overall:
+    name: Metrics Overall
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generating svg
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/metrics.overall.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base_indepth: yes
+          repositories_forks: yes
+          repositories_affiliations: owner, collaborator, organization_member
+
+      - name: Upload svg
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics.overall.svg
+          path: metrics.overall.svg
+          retention-days: 1
+
+  achievements:
+    runs-on: ubuntu-latest
+    name: Metrics Achievements
+
+    steps:
+      - name: Generating svg
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/metrics.achievements.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: ""
+          plugin_achievements: yes
+
+      - name: Upload svg
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics.achievements.svg
+          path: metrics.achievements.svg
+          retention-days: 1
+
+  followup:
+    runs-on: ubuntu-latest
+    name: Metrics Followup
+
+    steps:
+      - name: Generating svg
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/metrics.followup.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: ""
+          plugin_followup: yes
+          plugin_followup_indepth: yes
+
+      - name: Upload svg
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics.followup.svg
+          path: metrics.followup.svg
+          retention-days: 1
+
+  languages:
+    runs-on: ubuntu-latest
+    name: Metrics Languages
+
+    steps:
+      - name: Generating svg
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/metrics.languages.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: ""
           plugin_languages: yes
-#          plugin_activity_skipped: heitorpolidoro
-#          output_action: none
+          plugin_languages_indepth: yes
+          plugin_languages_details: bytes-size, percentage, lines
 
-#      - name: Upload svg
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: metrics.activity.svg
-#          path: metrics.activity.svg
-#          retention-days: 1
+      - name: Upload svg
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics.languages.svg
+          path: metrics.languages.svg
+          retention-days: 1
 
-#  overall:
-#    name: Metrics Overall
-#    runs-on: ubuntu-latest
-#
-#    steps:
-#      - name: Generating svg
-#        uses: lowlighter/metrics@latest
-#        with:
-#          filename: metrics.overall.svg
-#          token: ${{ secrets.HEITORPOLIDORO_PAT }}
-#          base_indepth: yes
-#          repositories_forks: yes
-#          repositories_affiliations: owner, collaborator, organization_member
-#          output_action: none
-#
-#      - name: Upload svg
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: metrics.overall.svg
-#          path: metrics.overall.svg
-#          retention-days: 1
-#
-#  achievements:
-#    runs-on: ubuntu-latest
-#    name: Metrics Achievements
-#
-#    steps:
-#      - name: Generating svg
-#        uses: lowlighter/metrics@latest
-#        with:
-#          filename: metrics.achievements.svg
-#          token: ${{ secrets.HEITORPOLIDORO_PAT }}
-#          base: ""
-#          plugin_achievements: yes
-#          output_action: none
-#
-#      - name: Upload svg
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: metrics.achievements.svg
-#          path: metrics.achievements.svg
-#          retention-days: 1
-#
-#  followup:
-#    runs-on: ubuntu-latest
-#    name: Metrics Followup
-#
-#    steps:
-#      - name: Generating svg
-#        uses: lowlighter/metrics@latest
-#        with:
-#          filename: metrics.followup.svg
-#          token: ${{ secrets.HEITORPOLIDORO_PAT }}
-#          base: ""
-#          plugin_followup: yes
-#          plugin_followup_indepth: yes
-#          output_action: none
-#
-#      - name: Upload svg
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: metrics.followup.svg
-#          path: metrics.followup.svg
-#          retention-days: 1
-#
-#  languages:
-#    runs-on: ubuntu-latest
-#    name: Metrics Languages
-#
-#    steps:
-#      - name: Generating svg
-#        uses: lowlighter/metrics@latest
-#        with:
-#          filename: metrics.languages.svg
-#          token: ${{ secrets.HEITORPOLIDORO_PAT }}
-#          base: ""
-#          plugin_languages: yes
-#          plugin_languages_indepth: yes
-#          plugin_languages_details: bytes-size, percentage, lines
-#          output_action: none
-#
-#      - name: Upload svg
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: metrics.languages.svg
-#          path: metrics.languages.svg
-#          retention-days: 1
-#
-#  sponsor:
-#    name: Metrics Sponsor
-#    runs-on: ubuntu-latest
-#
-#    steps:
-#      - name: Generating svg
-#        uses: lowlighter/metrics@latest
-#        with:
-#          filename: metrics.sponsor.svg
-#          token: ${{ secrets.HEITORPOLIDORO_PAT }}
-#          base: ""
-#          plugin_sponsors: yes
-#          output_action: none
-#
-#      - name: Upload svg
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: metrics.sponsor.svg
-#          path: metrics.sponsor.svg
-#          retention-days: 1
-#
-#  leetcode:
-#    name: Metrics Leetcode
-#    runs-on: ubuntu-latest
-#
-#    steps:
-#      - name: Generating svg
-#        uses: lowlighter/metrics@latest
-#        with:
-#          filename: metrics.leetcode.svg
-#          token: ${{ secrets.HEITORPOLIDORO_PAT }}
-#          base: ""
-#          plugin_leetcode: yes
-#          plugin_leetcode_sections: solved, skills, recent
-#          output_action: none
-#
-#      - name: Upload svg
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: metrics.leetcode.svg
-#          path: metrics.leetcode.svg
-#          retention-days: 1
-#
-#  stackoverflow:
-#    name: Metrics Stackoverflow
-#    runs-on: ubuntu-latest
-#
-#    steps:
-#      - name: Generating svg
-#        uses: lowlighter/metrics@latest
-#        with:
-#          filename: metrics.stackoverflow.svg
-#          token: ${{ secrets.HEITORPOLIDORO_PAT }}
-#          base: ""
-#          plugin_stackoverflow: yes
-#          plugin_stackoverflow_user: 16155315
-#          plugin_stackoverflow_sections: answers-top, answers-recent, questions-top, questions-recent
-#          output_action: none
-#
-#      - name: Upload svg
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: metrics.stackoverflow.svg
-#          path: metrics.stackoverflow.svg
-#          retention-days: 1
-#
+  sponsor:
+    name: Metrics Sponsor
+    runs-on: ubuntu-latest
 
-#  projects:
-#    name: Metrics Projects
-#    runs-on: ubuntu-latest
-#
-#    steps:
-#      - name: Generating svg
-#        uses: lowlighter/metrics@latest
-#        with:
-#          filename: metrics.projects.svg
-#          token: ${{ secrets.HEITORPOLIDORO_PAT }}
-#          base: ""
-#          plugin_projects: yes
-#          plugin_projects_descriptions: yes
-#          output_action: none
-#
-#      - name: Upload svg
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: metrics
-#          path: /metrics/metrics.projects.svg
-#          retention-days: 1
+    steps:
+      - name: Generating svg
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/metrics.sponsor.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: ""
+          plugin_sponsors: yes
+
+      - name: Upload svg
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics.sponsor.svg
+          path: metrics.sponsor.svg
+          retention-days: 1
+
+  leetcode:
+    name: Metrics Leetcode
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generating svg
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/metrics.leetcode.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: ""
+          plugin_leetcode: yes
+          plugin_leetcode_sections: solved, skills, recent
+
+      - name: Upload svg
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics.leetcode.svg
+          path: metrics.leetcode.svg
+          retention-days: 1
+
+  stackoverflow:
+    name: Metrics Stackoverflow
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generating svg
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/metrics.stackoverflow.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: ""
+          plugin_stackoverflow: yes
+          plugin_stackoverflow_user: 16155315
+          plugin_stackoverflow_sections: answers-top, answers-recent, questions-top, questions-recent
+
+      - name: Upload svg
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics.stackoverflow.svg
+          path: metrics.stackoverflow.svg
+          retention-days: 1
+
+  projects:
+    name: Metrics Projects
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generating svg
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/metrics.projects.svg
+          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+          base: ""
+          plugin_projects: yes
+          plugin_projects_descriptions: yes
+
+      - name: Upload svg
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics
+          path: /metrics/metrics.projects.svg
+          retention-days: 1
 
 #  update:
 #    runs-on: ubuntu-latest
@@ -233,8 +208,8 @@ jobs:
 #      - leetcode
 #      - stackoverflow
 #      - activity
-##      - wakatime
-##      - projects
+#    #      - wakatime
+#    #      - projects
 #
 #    steps:
 #      - name: Checkout
@@ -246,7 +221,7 @@ jobs:
 #        uses: actions/download-artifact@v5
 #        with:
 #          path: ./metrics
-
+#
 #      - name: Set up Python 3.11
 #        id: cache_pip
 #        uses: actions/setup-python@v4

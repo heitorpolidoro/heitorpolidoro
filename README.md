@@ -12,7 +12,6 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <!-- Contacts -->
 [![GMail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:heitor.polidoro@gmail.com)
 [![YouTube](https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@heitor.polidoro)
-<br>
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/heitor-polidoro/)
 <br>
 [![Stack Overflow](https://img.shields.io/badge/stack%20overflow-FE7A16?logo=stack-overflow&logoColor=white&style=for-the-badge)](https://stackoverflow.com/users/16155315)
@@ -47,7 +46,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 <img src="metrics/metrics.overall.svg"><br>
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=heitorpolidoro&theme=dark&date_format=M%20j%5B%2C%20Y%5D&card_width=500px&hide_border=true)](https://git.io/streak-stats)<br>
+[![GitHub Streak](https://streak-stats.demolab.com?user=heitorpolidoro&theme=dark&hide_border=true&mode=weekly&card_width=500)](https://git.io/streak-stats)<br>
 <img src="metrics/metrics.languages.svg">
 </div>
 

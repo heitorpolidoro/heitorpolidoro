@@ -21,6 +21,7 @@ jobs:
           plugin_activity_limit: 10
           plugin_activity_days: 0
           plugin_activity_skipped: heitorpolidoro
+          output_condition: data-changed
 
   overall:
     name: Metrics Overall
@@ -35,6 +36,7 @@ jobs:
           base_indepth: yes
           repositories_forks: yes
           repositories_affiliations: owner, collaborator, organization_member
+          output_condition: data-changed
 
   achievements:
     runs-on: ubuntu-latest
@@ -48,6 +50,7 @@ jobs:
           token: ${{ secrets.HEITORPOLIDORO_PAT }}
           base: ""
           plugin_achievements: yes
+          output_condition: data-changed
 
   followup:
     runs-on: ubuntu-latest
@@ -62,6 +65,7 @@ jobs:
           base: ""
           plugin_followup: yes
           plugin_followup_indepth: yes
+          output_condition: data-changed
 
   languages:
     runs-on: ubuntu-latest
@@ -77,6 +81,7 @@ jobs:
           plugin_languages: yes
           plugin_languages_indepth: yes
           plugin_languages_details: bytes-size, percentage, lines
+          output_condition: data-changed
 
   sponsor:
     name: Metrics Sponsor
@@ -90,6 +95,7 @@ jobs:
           token: ${{ secrets.HEITORPOLIDORO_PAT }}
           base: ""
           plugin_sponsors: yes
+          output_condition: data-changed
 
   leetcode:
     name: Metrics Leetcode
@@ -104,6 +110,7 @@ jobs:
           base: ""
           plugin_leetcode: yes
           plugin_leetcode_sections: solved, skills, recent
+          output_condition: data-changed
 
   stackoverflow:
     name: Metrics Stackoverflow
@@ -119,6 +126,7 @@ jobs:
           plugin_stackoverflow: yes
           plugin_stackoverflow_user: 16155315
           plugin_stackoverflow_sections: answers-top, answers-recent, questions-top, questions-recent
+          output_condition: data-changed
 
   projects:
     name: Metrics Projects
@@ -133,4 +141,48 @@ jobs:
           base: ""
           plugin_projects: yes
           plugin_projects_descriptions: yes
+          output_condition: data-changed
 
+
+  update:
+    name: Update README
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      - name: Set up Python 3.11
+        id: cache_pip
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Build README
+        env:
+          GITHUB_TOKEN: ${{ secrets.HEITORPOLIDORO_PAT }}
+        run: |
+          python build_readme.py
+
+      - name: Update info
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [[ "$(git status --porcelain)" != "" ]]; then
+            set -x
+            git config http.sslVerify false
+            git config user.name github-actions[bot]
+            git config user.email github-actions[bot]@users.noreply.github.com
+            git add -A
+            git commit -m "Update README - metrics"
+            git pull --rebase
+            git push "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/heitorpolidoro/heitorpolidoro.git" HEAD:master
+          else
+            echo "Nothing to commit"
+          fi

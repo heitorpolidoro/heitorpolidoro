@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
+  push:
+    branches:
+      - '**'
 
 jobs:
   activity:
@@ -15,22 +18,22 @@ jobs:
       env:
         METRICS_USE_PREBUILT_IMAGE: true
       with:
-          base: header
-          token: ${{ secrets.GITHUB_TOKEN }}
-          plugin_isocalendar: yes
-          plugin_languages: yes
-          plugin_stars: yes
-          config_order: base.header, isocalendar, languages, stars
+#          base: header
+#          token: ${{ secrets.GITHUB_TOKEN }}
+#          plugin_isocalendar: yes
+#          plugin_languages: yes
+#          plugin_stars: yes
+#          config_order: base.header, isocalendar, languages, stars
 #      - name: Generating svg
 #        uses: lowlighter/metrics@latest
 #        with:
-#          filename: metrics.activity.svg
-#          token: ${{ secrets.GITHUB_TOKEN }}
-##          base: ""
-##          plugin_activity: yes
-##          plugin_activity_limit: 10
-##          plugin_activity_days: 0
-##          plugin_activity_skipped: heitorpolidoro
+          filename: /metrics/metrics.activity.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_activity: yes
+          plugin_activity_limit: 10
+          plugin_activity_days: 0
+          plugin_activity_skipped: heitorpolidoro
 #          output_action: none
 
 #      - name: Upload svg

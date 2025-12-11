@@ -172,7 +172,6 @@ jobs:
 
       - name: Github Streak
         run: |
-#           run once to warm up the server
           curl -s "https://streak-stats.demolab.com?user=heitorpolidoro&theme=dark&hide_border=true&mode=weekly&card_width=500"
           curl -s "https://streak-stats.demolab.com?user=heitorpolidoro&theme=dark&hide_border=true&mode=weekly&card_width=500" -o metrics.streak.svg
 

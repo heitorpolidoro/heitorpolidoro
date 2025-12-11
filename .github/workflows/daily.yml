@@ -29,11 +29,13 @@ jobs:
 #        with:
           filename: metrics/metrics.activity.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-          base: ""
+#          base: ""
           plugin_activity: yes
           plugin_activity_limit: 10
           plugin_activity_days: 0
-          plugin_activity_skipped: heitorpolidoro
+
+          plugin_languages: yes
+#          plugin_activity_skipped: heitorpolidoro
 #          output_action: none
 
 #      - name: Upload svg

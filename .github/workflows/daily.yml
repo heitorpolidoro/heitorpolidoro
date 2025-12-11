@@ -112,21 +112,21 @@ jobs:
           plugin_leetcode_sections: solved, skills, recent
           output_condition: data-changed
 
-  stackoverflow:
-    name: Metrics Stackoverflow
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Generating svg
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics/metrics.stackoverflow.svg
-          token: ${{ secrets.HEITORPOLIDORO_PAT }}
-          base: ""
-          plugin_stackoverflow: yes
-          plugin_stackoverflow_user: 16155315
-          plugin_stackoverflow_sections: answers-top, answers-recent, questions-top, questions-recent
-          output_condition: data-changed
+#  stackoverflow:
+#    name: Metrics Stackoverflow
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - name: Generating svg
+#        uses: lowlighter/metrics@latest
+#        with:
+#          filename: metrics/metrics.stackoverflow.svg
+#          token: ${{ secrets.HEITORPOLIDORO_PAT }}
+#          base: ""
+#          plugin_stackoverflow: yes
+#          plugin_stackoverflow_user: 16155315
+#          plugin_stackoverflow_sections: answers-top, answers-recent, questions-top, questions-recent
+#          output_condition: data-changed
 
   projects:
     name: Metrics Projects

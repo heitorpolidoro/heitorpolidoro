@@ -116,7 +116,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 </summary>
 
 [![LeetCode](metrics/metrics.leetcode.svg)](https://leetcode.com/u/heitorpolidoro/)
-[![Stack Overflow](metrics/metrics.stackoverflow.svg)](https://stackoverflow.com/users/16155315/heitor-polidoro?tab=profile)
+<!-- [![Stack Overflow](metrics/metrics.stackoverflow.svg)](https://stackoverflow.com/users/16155315/heitor-polidoro?tab=profile) --?
 </details>
 
 
@@ -139,15 +139,6 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 ![heitorpolidoro github-stats](https://stats.dooboo.io/api/github-stats-advanced?login=heitorpolidoro)
 ---
 -->
-<p align="center">
-<a href="https://spotify-github-profile.vercel.app/api/view?uid=12143144338&redirect=true">
-  <img src="https://spotify-github-profile.vercel.app/api/view?uid=12143144338&cover_image=true&theme=natemoo-re&show_offline=false&background_color=121212&interchange=true">
-</a>
-</p>
-
-<p align="center">
-  <img src="https://spotify-recently-played-readme.vercel.app/api?user=12143144338&count=5">
-</p>
 
 ---
 

@@ -47,7 +47,6 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 <img src="metrics/metrics.overall.svg"><br>
-![Heitor Polidoro's GitHub stats](https://github-readme-stats.vercel.app/api/?username=heitorpolidoro&show_icons=true&theme=dark&show=reviews,prs_merged,prs_merged_percentage&rank_icon=github&card_width=500px&hide_border=true)<br>
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=heitorpolidoro&theme=dark&date_format=M%20j%5B%2C%20Y%5D&card_width=500px&hide_border=true)](https://git.io/streak-stats)<br>
 <img src="metrics/metrics.languages.svg">
 </div>

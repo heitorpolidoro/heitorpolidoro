@@ -27,7 +27,7 @@ jobs:
 #      - name: Generating svg
 #        uses: lowlighter/metrics@latest
 #        with:
-          filename: /metrics/metrics.activity.svg
+          filename: metrics/metrics.activity.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
           plugin_activity: yes

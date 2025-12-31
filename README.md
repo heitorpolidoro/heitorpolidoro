@@ -37,8 +37,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-[![Ia](https://img.shields.io/badge/ia-Minha_coleção_pessoal_de_IA_para_você_que_é_Lendário.-lightgreen)](https://github.com/heitorpolidoro/ia)<br>
-[![Cash_Lens](https://img.shields.io/badge/cash__lens-No_description-lightgreen)](https://github.com/heitorpolidoro/cash_lens) 
+[![Colorls](https://img.shields.io/badge/colorls-A_Ruby_gem_that_beautifies_the_terminal's_ls_command,_with_color_and_font--awesome_icons._:tada:-lightgreen)](https://github.com/heitorpolidoro/colorls)<br>
+[![Ia](https://img.shields.io/badge/ia-Minha_coleção_pessoal_de_IA_para_você_que_é_Lendário.-lightgreen)](https://github.com/heitorpolidoro/ia) 
 </div>
 
 <!-- working_on: ends -->

@@ -37,8 +37,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-[![Meridian](https://img.shields.io/badge/meridian-No_description-lightgreen)](https://github.com/heitorpolidoro/meridian)<br>
-[![Cash_Lens](https://img.shields.io/badge/cash__lens-No_description-lightgreen)](https://github.com/heitorpolidoro/cash_lens) 
+[![Cash_Lens](https://img.shields.io/badge/cash__lens-No_description-lightgreen)](https://github.com/heitorpolidoro/cash_lens)<br>
+[![Meridian](https://img.shields.io/badge/meridian-No_description-lightgreen)](https://github.com/heitorpolidoro/meridian) 
 </div>
 
 <!-- working_on: ends -->

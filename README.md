@@ -37,8 +37,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-[![Meridian](https://img.shields.io/badge/meridian-Meridian_AI_Manager-lightgreen)](https://github.com/heitorpolidoro/meridian)<br>
-[![Sigecon](https://img.shields.io/badge/sigecon-Sistema_de_Gestão_de_Controle_de_Tarefas-lightgreen)](https://github.com/heitorpolidoro/sigecon) 
+[![Sigecon](https://img.shields.io/badge/sigecon-Sistema_de_Gestão_de_Controle_de_Tarefas-lightgreen)](https://github.com/heitorpolidoro/sigecon)<br>
+[![Cash_Lens](https://img.shields.io/badge/cash__lens-Personal_finance_tracking_and_analysis_built_with_Elixir_and_Phoenix.-lightgreen)](https://github.com/heitorpolidoro/cash_lens) 
 </div>
 
 <!-- working_on: ends -->

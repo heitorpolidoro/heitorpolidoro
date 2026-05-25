@@ -37,8 +37,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-[![Repertoire-Hero](https://img.shields.io/badge/repertoire--hero-Next.js_project_for_repertoire_management-lightgreen)](https://github.com/heitorpolidoro/repertoire-hero)<br>
-[![Meridian](https://img.shields.io/badge/meridian-Meridian_AI_Manager-lightgreen)](https://github.com/heitorpolidoro/meridian) 
+[![Meridian](https://img.shields.io/badge/meridian-Meridian_AI_Manager-lightgreen)](https://github.com/heitorpolidoro/meridian)<br>
+[![Repertoire-Hero](https://img.shields.io/badge/repertoire--hero-Next.js_project_for_repertoire_management-lightgreen)](https://github.com/heitorpolidoro/repertoire-hero) 
 </div>
 
 <!-- working_on: ends -->

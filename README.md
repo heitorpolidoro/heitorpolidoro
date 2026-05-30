@@ -37,7 +37,7 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-[![Sigecon](https://img.shields.io/badge/sigecon-Sistema_de_Gestão_de_Controle_de_Tarefas-lightgreen)](https://github.com/heitorpolidoro/sigecon)<br>
+[![Nexdom](https://img.shields.io/badge/nexdom-Sistema_de_Gestão_de_Controle_de_Tarefas-lightgreen)](https://github.com/heitorpolidoro/nexdom)<br>
 [![Repertoire-Hero](https://img.shields.io/badge/repertoire--hero-Next.js_project_for_repertoire_management-lightgreen)](https://github.com/heitorpolidoro/repertoire-hero) 
 </div>
 

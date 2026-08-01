@@ -37,8 +37,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-[![Bartholomew-Smith](https://img.shields.io/badge/bartholomew--smith-Your_butler_for_managing_your_GitHub_repositories-lightgreen)](https://github.com/heitorpolidoro/bartholomew-smith)<br>
-[![Repertoire-Hero](https://img.shields.io/badge/repertoire--hero-Next.js_project_for_repertoire_management-lightgreen)](https://github.com/heitorpolidoro/repertoire-hero) 
+[![Repertoire-Hero](https://img.shields.io/badge/repertoire--hero-Next.js_project_for_repertoire_management-lightgreen)](https://github.com/heitorpolidoro/repertoire-hero)<br>
+[![Bartholomew-Smith](https://img.shields.io/badge/bartholomew--smith-Your_butler_for_managing_your_GitHub_repositories-lightgreen)](https://github.com/heitorpolidoro/bartholomew-smith) 
 </div>
 
 <!-- working_on: ends -->

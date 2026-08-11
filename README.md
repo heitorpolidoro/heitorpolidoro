@@ -37,8 +37,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-[![Cash_Lens](https://img.shields.io/badge/cash__lens-Personal_finance_tracking_and_analysis_built_with_Elixir_and_Phoenix.-lightgreen)](https://github.com/heitorpolidoro/cash_lens)<br>
-[![Apras](https://img.shields.io/badge/apras-Sistema_de_Gestão_de_Controle_de_Tarefas-lightgreen)](https://github.com/heitorpolidoro/apras) 
+[![Apras](https://img.shields.io/badge/apras-Sistema_de_Gestão_de_Controle_de_Tarefas-lightgreen)](https://github.com/heitorpolidoro/apras)<br>
+[![Cash_Lens](https://img.shields.io/badge/cash__lens-Personal_finance_tracking_and_analysis_built_with_Elixir_and_Phoenix.-lightgreen)](https://github.com/heitorpolidoro/cash_lens) 
 </div>
 
 <!-- working_on: ends -->

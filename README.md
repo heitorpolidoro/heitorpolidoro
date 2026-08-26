@@ -37,8 +37,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-[![Apras](https://img.shields.io/badge/apras-Sistema_de_Gestão_de_Controle_de_Tarefas-lightgreen)](https://github.com/heitorpolidoro/apras)<br>
-[![Repertoire-Hero](https://img.shields.io/badge/repertoire--hero-Next.js_project_for_repertoire_management-lightgreen)](https://github.com/heitorpolidoro/repertoire-hero) 
+[![Repertoire-Hero](https://img.shields.io/badge/repertoire--hero-Next.js_project_for_repertoire_management-lightgreen)](https://github.com/heitorpolidoro/repertoire-hero)<br>
+[![Apras](https://img.shields.io/badge/apras-Sistema_de_Gestão_de_Controle_de_Tarefas-lightgreen)](https://github.com/heitorpolidoro/apras) 
 </div>
 
 <!-- working_on: ends -->

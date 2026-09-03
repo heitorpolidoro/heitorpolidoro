@@ -37,8 +37,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-[![Factorio](https://img.shields.io/badge/factorio-Self--contained,_offline_Factorio_production--tree_explorer-lightgreen)](https://github.com/heitorpolidoro/factorio)<br>
-[![Repertoire-Hero](https://img.shields.io/badge/repertoire--hero-Next.js_project_for_repertoire_management-lightgreen)](https://github.com/heitorpolidoro/repertoire-hero) 
+[![Repertoire-Hero](https://img.shields.io/badge/repertoire--hero-Next.js_project_for_repertoire_management-lightgreen)](https://github.com/heitorpolidoro/repertoire-hero)<br>
+[![Factorio](https://img.shields.io/badge/factorio-Self--contained,_offline_Factorio_production--tree_explorer-lightgreen)](https://github.com/heitorpolidoro/factorio) 
 </div>
 
 <!-- working_on: ends -->

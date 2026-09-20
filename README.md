@@ -37,8 +37,8 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 <div align="center">
 
 ### 🔭 I’m currently working on:
-[![Meridian](https://img.shields.io/badge/meridian-Local_kanban_board_server_that_drives_an_AI_agent_pipeline_over_per--project_task_boards-lightgreen)](https://github.com/heitorpolidoro/meridian)<br>
-[![Apras](https://img.shields.io/badge/apras-Sistema_de_Gestão_de_Controle_de_Tarefas-lightgreen)](https://github.com/heitorpolidoro/apras) 
+[![Apras](https://img.shields.io/badge/apras-Sistema_de_Gestão_de_Controle_de_Tarefas-lightgreen)](https://github.com/heitorpolidoro/apras)<br>
+[![Meridian](https://img.shields.io/badge/meridian-Local_kanban_board_server_that_drives_an_AI_agent_pipeline_over_per--project_task_boards-lightgreen)](https://github.com/heitorpolidoro/meridian) 
 </div>
 
 <!-- working_on: ends -->

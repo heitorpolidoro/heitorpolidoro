@@ -1,11 +1,11 @@
 <h1 align="center">Hi 👋, I'm Heitor Polidoro</h1>
-<h3 align="center">Backend developer</h3>
+<h3 align="center">Senior Backend Engineer & Technical Lead · AI-Augmented Engineering</h3>
 
-Graduated in Computer Science from Universidade de São Paulo, campus São Carlos, Brazil, with a master's degree with an emphasis in Robotics. 
+15+ years architecting distributed backend services and high-throughput fintech infrastructure (US & LATAM). Currently focused on agentic/multi-agent engineering — architect of **Meridian**, a multi-agent orchestrator that coordinates AI agent personas (PM, Spec-Generator, Developer, Code-Reviewer, QA) to drive feature backlogs to test-verified pull requests with strict workspace isolation.
 
-I've programmed in Python, Elixir, Java, JavaScript (Node and TypeScript), C/C++ to Assembly.
+Deep expertise in Python (FastAPI, Django) and Elixir (Phoenix/OTP), with TypeScript on the frontend when projects call for it. M.Sc. in Engineering and B.S. in Computer Science from Universidade de São Paulo (USP).
 
-Love to solve puzzles, passionate about programming since I was 15 years old. Not afraid to learn new things.
+🟢 **Open to new opportunities** — Tech Lead / Staff Backend / AI Engineering roles, remote.
 <div align="center">
 
 --- 
@@ -126,8 +126,10 @@ Love to solve puzzles, passionate about programming since I was 15 years old. No
 ---
 <h3 align="left">Featured:</h3>
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=github-app-handler&theme=dark)](https://github.com/heitorpolidoro/github-app-handler)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=bartholomew-smith&theme=dark)](https://github.com/heitorpolidoro/bartholomew-smith)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=apras&theme=dark)](https://github.com/heitorpolidoro/apras)
+<br>
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=cash_lens&theme=dark)](https://github.com/heitorpolidoro/cash_lens)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=heitorpolidoro&repo=repertoire-hero&theme=dark)](https://github.com/heitorpolidoro/repertoire-hero)
 
 ---
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=heitorpolidoro&theme=github-compact&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)

@@ -37,8 +37,8 @@ Deep expertise in Python (FastAPI, Django) and Elixir (Phoenix/OTP), with TypeSc
 <div align="center">
 
 ### 🔭 I’m currently working on:
-[![Repertoire-Hero](https://img.shields.io/badge/repertoire--hero-Next.js_project_for_repertoire_management-lightgreen)](https://github.com/heitorpolidoro/repertoire-hero)<br>
-[![Apras](https://img.shields.io/badge/apras-Sistema_de_Gestão_de_Controle_de_Tarefas-lightgreen)](https://github.com/heitorpolidoro/apras) 
+[![Meridian-Ai-Manager](https://img.shields.io/badge/meridian--ai--manager-Meridian_AI_Manager-lightgreen)](https://github.com/heitorpolidoro/meridian-ai-manager)<br>
+[![Repertoire-Hero](https://img.shields.io/badge/repertoire--hero-Next.js_project_for_repertoire_management-lightgreen)](https://github.com/heitorpolidoro/repertoire-hero) 
 </div>
 
 <!-- working_on: ends -->
